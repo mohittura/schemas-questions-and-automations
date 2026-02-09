@@ -2,7 +2,7 @@ import json
 import os
 import re
 import time
-from notion_client import Client #type: ignore
+from notion_client import Client
 from typing import List, Dict, Any, Optional
 
 class NotionDocumentExtractor:
@@ -483,8 +483,8 @@ class NotionDocumentExtractor:
 # Usage
 if __name__ == "__main__":
     # Configuration
-    NOTION_API_KEY = "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"
-    PARENT_PAGE_ID = "2fc89db15e5b8047a9c6f8b4b975b223"
+    NOTION_API_KEY = "your_notion_api_key_here"
+    PARENT_PAGE_ID = "your_parent_page_id_here"
     OUTPUT_DIR = "notion_documents"
     
     # Initialize extractor
