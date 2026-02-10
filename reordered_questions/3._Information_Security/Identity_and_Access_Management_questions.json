@@ -1,0 +1,124 @@
+{
+  "document_name": "Identity and Access Management Policy",
+  "document_type": "Identity and Access Management Policy",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 8,
+  "question_categories": [
+    {
+      "category": "Organization & Scope",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "organization_name",
+          "question": "What is your organization or product name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the policy to identify the organization",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "environments",
+          "question": "Which environments are included in this policy?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Lists all environments the policy covers",
+          "placeholder": "Production, Staging, Development"
+        },
+        {
+          "question_id": "system_scope",
+          "question": "What systems does this IAM policy cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Defines the scope of systems the policy applies to",
+          "placeholder": "SaaS platform, internal tools, cloud infrastructure"
+        }
+      ]
+    },
+    {
+      "category": "Authentication & Access Control",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "authentication_method",
+          "question": "What authentication method does your organization use?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Primary method used to authenticate users",
+          "placeholder": "Single Sign-On (SSO), Multi-Factor Authentication (MFA), Password-based"
+        },
+        {
+          "question_id": "access_control_model",
+          "question": "What access control model is implemented?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Model used to manage user permissions",
+          "placeholder": "Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), Discretionary Access Control (DAC)"
+        }
+      ]
+    },
+    {
+      "category": "Access Reviews",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "access_review_frequency",
+          "question": "How often are access reviews conducted?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Frequency of reviewing user access rights",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Semi-annually",
+            "Annually"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Responsibilities",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "iam_owner",
+          "question": "Who is the IAM policy owner?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person responsible for maintaining and enforcing the IAM policy",
+          "placeholder": "CISO, Security Manager, IT Director"
+        },
+        {
+          "question_id": "roles_responsibilities",
+          "question": "What roles and their IAM responsibilities should be documented?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "List each organizational role and their specific IAM responsibilities",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Responsibility",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80e5-8c2c-d0636372342b",
+    "extraction_date": "2026-02-09T16:00:18.130963",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 20,
+    "substantive_sections": 9,
+    "generic_sections_excluded": 11,
+    "reorder_timestamp": "2026-02-10T11:45:07.061291",
+    "validator_version": "3.0_intelligent"
+  }
+}

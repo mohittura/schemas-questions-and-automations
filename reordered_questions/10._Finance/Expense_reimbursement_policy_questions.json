@@ -1,0 +1,139 @@
+{
+  "document_name": "Expense Reimbursement Policy",
+  "document_type": "Expense Reimbursement Policy",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 9,
+  "question_categories": [
+    {
+      "category": "Company & Document Details",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the policy to identify the company",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What is the version number for this policy?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version tracking for policy updates",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this policy?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name or title of the person who approved the policy",
+          "placeholder": "CFO Name"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this policy become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the policy takes effect"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this policy last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date of last policy review"
+        }
+      ]
+    },
+    {
+      "category": "Expense Categories",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "expense_categories",
+          "question": "What expense categories should be included in the policy?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define the types of expenses employees can claim",
+          "fields": [
+            {
+              "name": "Expense Category",
+              "type": "text"
+            },
+            {
+              "name": "Description / Examples",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Approval Workflow",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "approval_thresholds",
+          "question": "Define the approval workflow based on expense amounts",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Set who needs to approve expenses at different amount levels",
+          "fields": [
+            {
+              "name": "Expense Amount Range",
+              "type": "text"
+            },
+            {
+              "name": "Approver Required",
+              "type": "select",
+              "options": [
+                "Direct Manager",
+                "Department Head",
+                "CFO / Executive Approval"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Policy Timelines",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "submission_deadline_days",
+          "question": "How many days do employees have to submit expense claims after incurring the expense?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Defines the deadline for expense submission",
+          "placeholder": "30"
+        },
+        {
+          "question_id": "reimbursement_processing_days",
+          "question": "How many business days does it take to process reimbursements after approval?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Sets expectations for reimbursement timing",
+          "placeholder": "10"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8008-932f-d9b09d185757",
+    "extraction_date": "2026-02-09T18:12:53.386270",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 13,
+    "substantive_sections": 8,
+    "generic_sections_excluded": 5,
+    "reorder_timestamp": "2026-02-10T11:45:06.563420",
+    "validator_version": "3.0_intelligent"
+  }
+}

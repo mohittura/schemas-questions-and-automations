@@ -1,0 +1,238 @@
+{
+  "document_name": "Product Usage Guide",
+  "document_type": "Product Usage Guide",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 21,
+  "question_categories": [
+    {
+      "category": "Scope & Feature Overview",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "feature_description",
+          "question": "Provide a concise description of the feature.",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Sets user expectations",
+          "placeholder": "e.g., The Advanced Reporting Dashboard allows users to create, customize, and share interactive data visualizations."
+        },
+        {
+          "question_id": "included_functionality",
+          "question": "List the specific functionalities covered in this guide (one per line).",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Defines the boundaries of the guide",
+          "placeholder": "e.g., Creating reports\nScheduling automated exports\nSharing dashboards"
+        },
+        {
+          "question_id": "excluded_items",
+          "question": "List any related items explicitly NOT covered (one per line).",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Prevents user confusion about what’s outside scope",
+          "placeholder": "e.g., API integration\nCustom scripting\nLegacy widget migration"
+        },
+        {
+          "question_id": "key_outcomes",
+          "question": "List the top 3–5 outcomes users will achieve (one per line).",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Motivates users to read and follow the guide",
+          "placeholder": "e.g., Reduce report creation time by 50%\nEnable self-service analytics\nImprove data-driven decisions"
+        },
+        {
+          "question_id": "when_to_use",
+          "question": "When should users use this feature? (bullet-style, one scenario per line)",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Clarifies ideal usage contexts",
+          "placeholder": "e.g., Monthly executive reviews\nQuarterly KPI tracking\nAd-hoc customer insights"
+        }
+      ]
+    },
+    {
+      "category": "Document Metadata",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "document_version",
+          "question": "What version number should this guide carry?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used for version control and change tracking",
+          "placeholder": "e.g., 1.0.0"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this guide become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Shows users the guide’s validity period"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this guide last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Helps users assess currency of the content"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who is the approver or sign-off authority for this guide?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Establishes accountability and governance",
+          "placeholder": "e.g., Jane Smith, Documentation Lead"
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Provides branding context in the document overview",
+          "placeholder": "e.g., Acme Corporation"
+        },
+        {
+          "question_id": "feature_module_name",
+          "question": "What is the exact name of the feature or module this guide covers?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document header and overview to identify the specific feature",
+          "placeholder": "e.g., Advanced Reporting Dashboard"
+        },
+        {
+          "question_id": "product_name",
+          "question": "What is the name of the product that contains this feature?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Ensures users know which product the guide belongs to",
+          "placeholder": "e.g., Acme Analytics Suite"
+        },
+        {
+          "question_id": "intended_audience",
+          "question": "Who is the primary audience for this guide?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the tone and depth of instructions",
+          "options": [
+            "Admin",
+            "Operator",
+            "Manager",
+            "End User",
+            "Customer Support"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "User Profile",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "primary_objectives",
+          "question": "List the primary objectives users want to achieve (one per line).",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Aligns guide content with user goals",
+          "placeholder": "e.g., Generate compliance reports quickly\nShare insights with stakeholders\nAutomate recurring dashboards"
+        },
+        {
+          "question_id": "user_roles",
+          "question": "Which user roles will use this feature?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Determines role-specific instructions",
+          "options": [
+            "Admin",
+            "Operator",
+            "Manager",
+            "End User"
+          ]
+        },
+        {
+          "question_id": "experience_level",
+          "question": "What is the expected experience level of the primary audience?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Sets the technical depth of the guide",
+          "options": [
+            "Beginner",
+            "Intermediate",
+            "Advanced"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Common Mistakes & Resolutions",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "common_issues",
+          "question": "List common issues users encounter (one per line).",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Populates the troubleshooting table",
+          "placeholder": "e.g., Report fails to load\nCharts display incorrect data\nExport button is grayed out"
+        },
+        {
+          "question_id": "issue_causes",
+          "question": "For each issue above, provide the likely cause (same order, one per line).",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Helps users self-diagnose problems",
+          "placeholder": "e.g., Browser cache conflict\nIncorrect filter selection\nMissing export permissions"
+        },
+        {
+          "question_id": "recommended_actions",
+          "question": "For each cause above, provide the recommended fix (same order, one per line).",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Enables quick resolution without support",
+          "placeholder": "e.g., Clear browser cache and reload\nVerify filter settings\nContact admin to grant export role"
+        }
+      ]
+    },
+    {
+      "category": "Internal Metrics",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "internal_metrics",
+          "question": "Which internal metrics will you track for this guide?",
+          "answer_type": "multi_select",
+          "required": false,
+          "description": "Determines which metrics appear in the governance table",
+          "options": [
+            "Article Views",
+            "Completion Rate",
+            "Support Tickets",
+            "User Feedback"
+          ]
+        },
+        {
+          "question_id": "metric_purposes",
+          "question": "For each selected metric, state its purpose (same order, one per line).",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Clarifies why each metric matters",
+          "placeholder": "e.g., Measure popularity\nGauge instruction clarity\nIdentify documentation gaps"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8080-8977-fe986584d4bd",
+    "extraction_date": "2026-02-09T17:54:08.502966",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 25,
+    "substantive_sections": 20,
+    "generic_sections_excluded": 5,
+    "reorder_timestamp": "2026-02-10T11:45:09.309839",
+    "validator_version": "3.0_intelligent"
+  }
+}

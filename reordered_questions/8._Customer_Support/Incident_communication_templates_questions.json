@@ -1,0 +1,216 @@
+{
+  "document_name": "Incident Communication Templates",
+  "document_type": "Incident Communication Templates",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 14,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "product_service",
+          "question": "What is the name of your product or service?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The specific product or service this communication template applies to",
+          "placeholder": "MyApp Platform"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this version become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The date this version of the template becomes active"
+        },
+        {
+          "question_id": "document_name",
+          "question": "What is the name of this incident communication document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The official name for this incident communication document",
+          "placeholder": "Incident Communication Template"
+        },
+        {
+          "question_id": "department",
+          "question": "Which department owns this incident communication process?",
+          "answer_type": "select",
+          "required": true,
+          "description": "The department responsible for managing incident communications",
+          "options": [
+            "Customer Support",
+            "Engineering",
+            "Operations",
+            "DevOps",
+            "SRE",
+            "IT",
+            "Other"
+          ]
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The person who approved this incident communication template",
+          "placeholder": "John Smith, VP Operations"
+        },
+        {
+          "question_id": "incident_type",
+          "question": "What types of incidents does this template cover?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all incident types this template will be used for",
+          "options": [
+            "Service Outage",
+            "Degradation",
+            "Security",
+            "Performance",
+            "Data Loss",
+            "Feature Unavailability"
+          ]
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who is the document owner responsible for maintaining this template?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The person or team responsible for maintaining this document",
+          "placeholder": "Support Operations"
+        },
+        {
+          "question_id": "version",
+          "question": "What is the version number of this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The current version number of this template",
+          "placeholder": "1.0"
+        }
+      ]
+    },
+    {
+      "category": "Company Information",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Your company name that will appear in incident communications",
+          "placeholder": "Acme Corp"
+        }
+      ]
+    },
+    {
+      "category": "Communication Channels",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "communication_channels",
+          "question": "Which communication channels will you use during incidents?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Add each communication channel and its specific purpose during incidents",
+          "fields": [
+            {
+              "name": "Channel",
+              "type": "select",
+              "options": [
+                "Status Page",
+                "Email",
+                "In-App Notification",
+                "Support Channels",
+                "Social Channels",
+                "Slack",
+                "Teams",
+                "SMS",
+                "Phone",
+                "Other"
+              ]
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communication Responsibilities",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "communication_roles",
+          "question": "Who has what responsibilities during incident communications?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define each role and their specific communication responsibilities during incidents",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "select",
+              "options": [
+                "Incident Commander",
+                "Engineering Team",
+                "Support Team",
+                "Communications Owner",
+                "Product Manager",
+                "Executive Sponsor",
+                "Other"
+              ]
+            },
+            {
+              "name": "Responsibility",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Review and Revision",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "review_date",
+          "question": "When should this document be reviewed next?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The scheduled date for reviewing this template"
+        },
+        {
+          "question_id": "reviewer_name",
+          "question": "Who will review this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The person responsible for reviewing this template",
+          "placeholder": "Support Operations Manager"
+        },
+        {
+          "question_id": "revision_notes",
+          "question": "Any notes about this revision?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Notes about what changed in this version of the template",
+          "placeholder": "Updated communication channels and added new incident types"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8021-b036-e1fee87f4320",
+    "extraction_date": "2026-02-09T17:57:16.699570",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 18,
+    "substantive_sections": 16,
+    "generic_sections_excluded": 2,
+    "reorder_timestamp": "2026-02-10T11:45:09.373972",
+    "validator_version": "3.0_intelligent"
+  }
+}

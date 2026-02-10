@@ -1,0 +1,261 @@
+{
+  "document_name": "Financial Close Checklist",
+  "document_type": "Financial Close Checklist",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 15,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the document header and overview",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "department_name",
+          "question": "Which department owns this checklist?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Defaults to Finance / Accounting but can be customized",
+          "placeholder": "Finance / Accounting"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who is the document owner?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Team or individual responsible for maintaining the checklist",
+          "placeholder": "Finance Department"
+        },
+        {
+          "question_id": "version",
+          "question": "Document version number?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version control identifier",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "Effective date of this version?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When this version becomes active"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "Last review date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When the document was last reviewed"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Approved by (name/title)?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person who approved this version",
+          "placeholder": "CFO"
+        }
+      ]
+    },
+    {
+      "category": "Scope & Frequency",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "close_frequency",
+          "question": "Which financial close periods does this checklist cover?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all that apply",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annual"
+          ]
+        },
+        {
+          "question_id": "departments_submitting_data",
+          "question": "Which departments submit financial data or supporting documentation?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all departments that provide data for the close",
+          "options": [
+            "Sales",
+            "Marketing",
+            "Operations",
+            "HR",
+            "IT",
+            "Procurement",
+            "Legal",
+            "All Departments"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Roles & Responsibilities",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "roles_responsibilities",
+          "question": "Define the roles and their responsibilities in the close process",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Who does what in your financial close process",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Responsibility",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Timelines",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "close_calendar",
+          "question": "What is your close calendar timeline?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Describe the typical timeline for your close process",
+          "placeholder": "Day 1-2: Pre-close activities\nDay 3-5: Close activities\nDay 6-7: Post-close and reporting"
+        },
+        {
+          "question_id": "deadline_dates",
+          "question": "What are the key deadline dates?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Key milestones and deadlines for deliverables",
+          "placeholder": "Preliminary P&L: T+3\nFinal statements: T+5\nManagement reporting: T+7"
+        }
+      ]
+    },
+    {
+      "category": "Pre-Close Activities",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "pre_close_tasks",
+          "question": "What pre-close tasks should be included?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Tasks completed before the official close begins",
+          "fields": [
+            {
+              "name": "Task",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Status Options",
+              "type": "select",
+              "options": [
+                "Pending",
+                "Completed",
+                "In Progress",
+                "Not Applicable"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Close Activities",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "close_tasks",
+          "question": "What close activities should be included?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Core tasks performed during the close period",
+          "fields": [
+            {
+              "name": "Task",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Status Options",
+              "type": "select",
+              "options": [
+                "Pending",
+                "Completed",
+                "In Progress",
+                "Not Applicable"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Post-Close Activities",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "post_close_tasks",
+          "question": "What post-close activities should be included?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Tasks completed after the close is finalized",
+          "fields": [
+            {
+              "name": "Task",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Status Options",
+              "type": "select",
+              "options": [
+                "Pending",
+                "Completed",
+                "In Progress",
+                "Not Applicable"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80a9-bc45-fdafa5277d90",
+    "extraction_date": "2026-02-09T18:14:56.854567",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 12,
+    "substantive_sections": 10,
+    "generic_sections_excluded": 2,
+    "reorder_timestamp": "2026-02-10T11:45:06.587185",
+    "validator_version": "3.0_intelligent"
+  }
+}

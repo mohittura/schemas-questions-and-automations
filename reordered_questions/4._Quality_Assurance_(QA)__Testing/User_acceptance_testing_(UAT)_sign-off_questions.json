@@ -1,0 +1,286 @@
+{
+  "document_name": "User Acceptance Testing (UAT) Sign-off",
+  "document_type": "UAT Sign-off",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 20,
+  "question_categories": [
+    {
+      "category": "Document Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "release_type",
+          "question": "What type of release is this?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Categorizes the scope of changes",
+          "options": [
+            "Patch",
+            "Minor",
+            "Major"
+          ]
+        },
+        {
+          "question_id": "uat_environment",
+          "question": "Which environment was used for UAT?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Testing environment where UAT was conducted",
+          "options": [
+            "Staging",
+            "UAT",
+            "Pre-production"
+          ]
+        },
+        {
+          "question_id": "uat_period",
+          "question": "What were the UAT start and end dates?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Duration of the UAT testing period"
+        },
+        {
+          "question_id": "prepared_by",
+          "question": "Who prepared this sign-off document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person or team responsible for the document",
+          "placeholder": "QA Team / Product Team / Name"
+        },
+        {
+          "question_id": "document_date",
+          "question": "What is the date of this document?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When the sign-off was completed"
+        },
+        {
+          "question_id": "product_system",
+          "question": "What is the name of the product or system being tested?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the system under test",
+          "placeholder": "e.g., Customer Portal, ERP System, Mobile App"
+        },
+        {
+          "question_id": "release_version",
+          "question": "What is the release version number?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version identifier for this release",
+          "placeholder": "e.g., v2.3.1, Release 2024.1"
+        }
+      ]
+    },
+    {
+      "category": "UAT Scope",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "features_included",
+          "question": "What features are included in this release?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Features that were tested during UAT",
+          "placeholder": "List each feature on a new line"
+        },
+        {
+          "question_id": "modules_tested",
+          "question": "Which modules were tested?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "System modules covered in testing",
+          "placeholder": "e.g., User Management, Reporting, Payment Processing"
+        },
+        {
+          "question_id": "workflows_validated",
+          "question": "What business workflows were validated?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Scope of business process validation",
+          "options": [
+            "Core workflows",
+            "Selected workflows",
+            "All workflows"
+          ]
+        },
+        {
+          "question_id": "out_of_scope",
+          "question": "What is explicitly out of scope for this UAT?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Items excluded from UAT validation",
+          "placeholder": "Features or modules not included in this testing cycle"
+        }
+      ]
+    },
+    {
+      "category": "UAT Execution Summary",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "total_test_scenarios",
+          "question": "How many total test scenarios were planned?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Total number of test cases for UAT",
+          "placeholder": "50"
+        },
+        {
+          "question_id": "executed_scenarios",
+          "question": "How many test scenarios were executed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases actually run",
+          "placeholder": "48"
+        },
+        {
+          "question_id": "passed_scenarios",
+          "question": "How many test scenarios passed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Successful test case count",
+          "placeholder": "45"
+        },
+        {
+          "question_id": "failed_scenarios",
+          "question": "How many test scenarios failed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Failed test case count",
+          "placeholder": "2"
+        },
+        {
+          "question_id": "blocked_scenarios",
+          "question": "How many test scenarios were blocked?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Test cases that could not be executed",
+          "placeholder": "1"
+        },
+        {
+          "question_id": "open_critical_issues",
+          "question": "Are there any open critical issues?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Status of critical blocking issues",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Known Issues",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "known_issues",
+          "question": "List any known issues identified during UAT",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Track issues that were found but not fixed",
+          "fields": [
+            {
+              "name": "Issue ID",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Severity",
+              "type": "select",
+              "options": [
+                "Critical",
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Decision",
+              "type": "select",
+              "options": [
+                "Accepted",
+                "Deferred"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sign-Off Authorization",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "sign_off_details",
+          "question": "Who are the stakeholders signing off on this UAT?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Official approval signatures for the release",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "select",
+              "options": [
+                "Product Owner",
+                "Business Representative",
+                "QA Lead",
+                "Engineering Lead",
+                "Other"
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Signature",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Final Decision",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "final_decision",
+          "question": "What is the final UAT decision?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Overall UAT outcome and recommendation",
+          "options": [
+            "Approved for Release",
+            "Approved with Known Issues",
+            "Not Approved"
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80b0-8d4b-cd0c3d6ec917",
+    "extraction_date": "2026-02-09T16:28:21.408667",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 9,
+    "substantive_sections": 7,
+    "generic_sections_excluded": 2,
+    "reorder_timestamp": "2026-02-10T11:45:07.800934",
+    "validator_version": "3.0_intelligent"
+  }
+}

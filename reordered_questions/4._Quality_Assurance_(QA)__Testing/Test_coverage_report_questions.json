@@ -1,0 +1,388 @@
+{
+  "document_name": "Test Coverage Report",
+  "document_type": "Test Coverage Report",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 21,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "environment",
+          "question": "Which environment was tested?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Environment where testing was performed",
+          "options": [
+            "QA",
+            "Staging",
+            "UAT",
+            "Production",
+            "Development"
+          ]
+        },
+        {
+          "question_id": "test_cycle",
+          "question": "What is the name of this test cycle?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the testing cycle or phase",
+          "placeholder": "e.g., Sprint 12 Regression"
+        },
+        {
+          "question_id": "release_version",
+          "question": "What is the release version being tested?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the specific release version",
+          "placeholder": "e.g., v2.3.0"
+        },
+        {
+          "question_id": "product_name",
+          "question": "What is the name of the product or system being tested?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used to identify the product in the report header",
+          "placeholder": "e.g., MyApp Platform"
+        },
+        {
+          "question_id": "prepared_by",
+          "question": "Who prepared this report?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person or team responsible for the report",
+          "placeholder": "e.g., QA Team Lead"
+        },
+        {
+          "question_id": "report_date",
+          "question": "What is the report date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the report was generated"
+        }
+      ]
+    },
+    {
+      "category": "Testing Overview Metrics",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "total_test_cases",
+          "question": "What is the total number of test cases?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Total count of all test cases in the test suite",
+          "placeholder": "e.g., 250"
+        },
+        {
+          "question_id": "test_cases_executed",
+          "question": "How many test cases were executed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases that have been run",
+          "placeholder": "e.g., 240"
+        },
+        {
+          "question_id": "test_cases_passed",
+          "question": "How many test cases passed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases that passed successfully",
+          "placeholder": "e.g., 220"
+        },
+        {
+          "question_id": "test_cases_failed",
+          "question": "How many test cases failed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases that failed",
+          "placeholder": "e.g., 15"
+        },
+        {
+          "question_id": "test_cases_blocked",
+          "question": "How many test cases are blocked?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases that cannot be executed due to blockers",
+          "placeholder": "e.g., 5"
+        },
+        {
+          "question_id": "test_cases_not_executed",
+          "question": "How many test cases were not executed?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of test cases that were not run",
+          "placeholder": "e.g., 10"
+        },
+        {
+          "question_id": "total_defects_logged",
+          "question": "How many defects were logged in total?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Total number of defects found during testing",
+          "placeholder": "e.g., 45"
+        },
+        {
+          "question_id": "open_critical_defects",
+          "question": "How many critical defects are still open?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Number of critical severity defects that remain unresolved",
+          "placeholder": "e.g., 2"
+        }
+      ]
+    },
+    {
+      "category": "Execution Summary",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "execution_summary",
+          "question": "Provide execution summary details",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Execution metrics with counts and percentages",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "select",
+              "options": [
+                "Executed",
+                "Passed",
+                "Failed",
+                "Blocked"
+              ]
+            },
+            {
+              "name": "Count",
+              "type": "number"
+            },
+            {
+              "name": "Percentage",
+              "type": "number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Defect Metrics",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "defect_metrics",
+          "question": "Provide defect metrics by severity",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Defect counts broken down by severity level",
+          "fields": [
+            {
+              "name": "Severity",
+              "type": "select",
+              "options": [
+                "Critical",
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Open Count",
+              "type": "number"
+            },
+            {
+              "name": "Closed Count",
+              "type": "number"
+            },
+            {
+              "name": "Total Count",
+              "type": "number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Requirement Coverage",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "requirement_coverage",
+          "question": "What requirement areas need coverage tracking?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Coverage status for different requirement areas",
+          "fields": [
+            {
+              "name": "Requirement Area",
+              "type": "text"
+            },
+            {
+              "name": "Covered",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "name": "Test Cases Linked",
+              "type": "number"
+            },
+            {
+              "name": "Coverage Status",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Feature Coverage",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "feature_coverage",
+          "question": "What features/modules need coverage tracking?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Coverage and automation status for each feature",
+          "fields": [
+            {
+              "name": "Feature / Module",
+              "type": "text"
+            },
+            {
+              "name": "Tested",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "name": "Automated",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "name": "Risk Level",
+              "type": "select",
+              "options": [
+                "Low",
+                "Medium",
+                "High"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Automation Coverage",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "automation_coverage",
+          "question": "Provide automation coverage details",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Automation coverage metrics by area",
+          "fields": [
+            {
+              "name": "Area",
+              "type": "text"
+            },
+            {
+              "name": "Automated Tests",
+              "type": "number"
+            },
+            {
+              "name": "Manual Tests",
+              "type": "number"
+            },
+            {
+              "name": "Coverage %",
+              "type": "number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Risks and Observations",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "risks_observations",
+          "question": "What risks and observations should be documented?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Testing risks, impacts, and recommendations",
+          "fields": [
+            {
+              "name": "Observation",
+              "type": "text"
+            },
+            {
+              "name": "Impact",
+              "type": "text"
+            },
+            {
+              "name": "Recommendation",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Release Readiness",
+      "order": 9,
+      "questions": [
+        {
+          "question_id": "release_readiness",
+          "question": "Provide release readiness assessment",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Release readiness criteria and their status",
+          "fields": [
+            {
+              "name": "Criteria",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No",
+                "Approve",
+                "Conditional",
+                "Reject"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80b9-9bf2-ee089edb7102",
+    "extraction_date": "2026-02-09T16:30:48.383009",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 14,
+    "substantive_sections": 10,
+    "generic_sections_excluded": 4,
+    "reorder_timestamp": "2026-02-10T11:45:07.598840",
+    "validator_version": "3.0_intelligent"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "document_name": "Code of Conduct",
+  "document_type": "Code of Conduct",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 10,
+  "question_categories": [
+    {
+      "category": "Company Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the document to identify the company",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "department_name",
+          "question": "Which department owns this Code of Conduct?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the department responsible for the document",
+          "placeholder": "Human Resources"
+        }
+      ]
+    },
+    {
+      "category": "Document Metadata",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "document_version",
+          "question": "What is the version number of this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version tracking for document control",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this document last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date of last document review"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who is the document owner?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Department or person responsible for maintaining the document",
+          "placeholder": "HR Department"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this Code of Conduct become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the policy takes effect"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this Code of Conduct?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name of the person who approved the document",
+          "placeholder": "CEO Name or HR Director Name"
+        }
+      ]
+    },
+    {
+      "category": "Acknowledgement Signatures",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "acknowledgement_roles",
+          "question": "What roles need to sign the acknowledgement?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "List all roles that need to acknowledge the Code of Conduct",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Signature",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Review and Revision",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "reviewer_name",
+          "question": "Who is responsible for reviewing this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person responsible for document review",
+          "placeholder": "HR Director Name"
+        },
+        {
+          "question_id": "next_review_date",
+          "question": "When should this document be reviewed next?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Scheduled date for next review"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80fe-9384-c553aff53db7",
+    "extraction_date": "2026-02-09T18:02:38.118283",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 16,
+    "substantive_sections": 5,
+    "generic_sections_excluded": 11,
+    "reorder_timestamp": "2026-02-10T11:45:10.011758",
+    "validator_version": "3.0_intelligent"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "document_name": "End User Documentation",
+  "document_type": "End User Documentation",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 9,
+  "question_categories": [
+    {
+      "category": "Product Description",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "product_description",
+          "question": "In one or two sentences, what does your product do and how does it help users?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Replaces the generic description in section 1.1",
+          "placeholder": "This product helps teams manage their work efficiently by providing tools for collaboration, reporting, and automation."
+        }
+      ]
+    },
+    {
+      "category": "Document Metadata",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "product_name",
+          "question": "What is the name of your product?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header and throughout the guide",
+          "placeholder": "e.g., ProjectFlow, DataHub, TeamSync"
+        },
+        {
+          "question_id": "product_version",
+          "question": "What version of the product does this documentation cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Displayed in the document overview",
+          "placeholder": "e.g., 3.2, 2024.1"
+        },
+        {
+          "question_id": "last_updated",
+          "question": "When was this documentation last updated?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Shown in the document overview to indicate freshness"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Which team or role owns this documentation?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document overview metadata",
+          "placeholder": "e.g., Customer Success, Product, Technical Writing"
+        }
+      ]
+    },
+    {
+      "category": "User Interface Sections",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "ui_sections",
+          "question": "List the main sections or areas of your product's user interface",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Replaces the generic Dashboard / Navigation Menu / Settings in section 4",
+          "fields": [
+            {
+              "name": "Section Name",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Common Tasks",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "common_tasks",
+          "question": "What are the most frequent tasks users perform in your product?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Populates the Common Tasks table in section 6",
+          "fields": [
+            {
+              "name": "Task Name",
+              "type": "text"
+            },
+            {
+              "name": "Step-by-Step Instructions",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Error Messages",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "error_messages",
+          "question": "List common error messages users might encounter and how to resolve them",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Populates the Error Messages Explained table",
+          "fields": [
+            {
+              "name": "Error Message",
+              "type": "text"
+            },
+            {
+              "name": "What It Means",
+              "type": "text"
+            },
+            {
+              "name": "What to Do",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Glossary",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "glossary_terms",
+          "question": "What product-specific terms should be defined for users?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Populates the Glossary table in section 12",
+          "fields": [
+            {
+              "name": "Term",
+              "type": "text"
+            },
+            {
+              "name": "Meaning",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8016-bdcc-d6ff1c4be602",
+    "extraction_date": "2026-02-09T15:49:54.143428",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 33,
+    "substantive_sections": 11,
+    "generic_sections_excluded": 22,
+    "reorder_timestamp": "2026-02-10T11:45:06.911671",
+    "validator_version": "3.0_intelligent"
+  }
+}

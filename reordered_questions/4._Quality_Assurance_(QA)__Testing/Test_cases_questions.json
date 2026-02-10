@@ -1,0 +1,140 @@
+{
+  "document_name": "Test Case Document",
+  "document_type": "Test Case Document",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 8,
+  "question_categories": [
+    {
+      "category": "Document Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "document_name",
+          "question": "What is the name of this test case document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used to identify the test document",
+          "placeholder": "e.g., Login Module Test Cases"
+        },
+        {
+          "question_id": "module_feature",
+          "question": "Which module or feature do these test cases cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Specifies the area being tested",
+          "placeholder": "e.g., User Authentication"
+        },
+        {
+          "question_id": "prepared_by",
+          "question": "Who prepared these test cases?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Records the test author",
+          "placeholder": "e.g., QA Engineer Name"
+        },
+        {
+          "question_id": "product_system",
+          "question": "What product or system are these test cases for?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the system under test",
+          "placeholder": "e.g., Customer Portal"
+        },
+        {
+          "question_id": "version",
+          "question": "What version of the system are these test cases for?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Tracks version compatibility",
+          "placeholder": "e.g., v2.1.0"
+        },
+        {
+          "question_id": "reviewed_by",
+          "question": "Who reviewed these test cases?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Records the reviewer",
+          "placeholder": "e.g., Senior QA Lead"
+        },
+        {
+          "question_id": "document_date",
+          "question": "What is the creation date for this document?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Records when the document was created"
+        }
+      ]
+    },
+    {
+      "category": "Test Case Details",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "test_cases",
+          "question": "What test cases should be included in this document?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define each test case with all required fields",
+          "fields": [
+            {
+              "name": "Test Case ID",
+              "type": "text"
+            },
+            {
+              "name": "Test Case Title",
+              "type": "text"
+            },
+            {
+              "name": "Module/Feature",
+              "type": "text"
+            },
+            {
+              "name": "Requirement Reference",
+              "type": "text"
+            },
+            {
+              "name": "Priority",
+              "type": "select",
+              "options": [
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Severity",
+              "type": "select",
+              "options": [
+                "Critical",
+                "Major",
+                "Minor"
+              ]
+            },
+            {
+              "name": "Preconditions",
+              "type": "text"
+            },
+            {
+              "name": "Expected Result",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-807b-9292-edf655e1bdf9",
+    "extraction_date": "2026-02-09T16:03:42.478511",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 11,
+    "substantive_sections": 5,
+    "generic_sections_excluded": 6,
+    "reorder_timestamp": "2026-02-10T11:45:07.736509",
+    "validator_version": "3.0_intelligent"
+  }
+}

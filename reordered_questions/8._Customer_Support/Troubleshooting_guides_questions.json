@@ -1,0 +1,288 @@
+{
+  "document_name": "Troubleshooting Guide",
+  "document_type": "Troubleshooting Guide",
+  "estimated_completion_time": "20-25 minutes",
+  "total_questions": 17,
+  "question_categories": [
+    {
+      "category": "Issue Descriptions",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "user_issue_descriptions",
+          "question": "What are the common issues users report? Provide descriptions from the user perspective.",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Describe issues as users would explain them",
+          "fields": [
+            {
+              "name": "Issue Title",
+              "type": "text"
+            },
+            {
+              "name": "User Description",
+              "type": "text"
+            },
+            {
+              "name": "Example Scenario",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Document Metadata",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company or organization name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header and scope definition",
+          "placeholder": "e.g., TechCorp Solutions"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who is the document owner or responsible team?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The team responsible for maintaining this guide",
+          "placeholder": "e.g., Customer Support Team / Technical Documentation"
+        },
+        {
+          "question_id": "version_number",
+          "question": "What is the version number for this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Document version for tracking changes",
+          "placeholder": "e.g., 1.0, 2.3.1"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "What is the effective date for this guide?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When this guide becomes active"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this guide last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "For tracking document currency"
+        },
+        {
+          "question_id": "issue_categories",
+          "question": "Which issue categories does this guide cover?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all that apply for your troubleshooting scenarios",
+          "options": [
+            "Configuration",
+            "Integration",
+            "Performance",
+            "Error",
+            "Access"
+          ]
+        },
+        {
+          "question_id": "product_feature_name",
+          "question": "What is the name of the product, feature, or system this troubleshooting guide covers?",
+          "answer_type": "text",
+          "required": true,
+          "description": "This identifies what the troubleshooting guide is for",
+          "placeholder": "e.g., CloudSync Pro, Payment Gateway API, Mobile App v3.2"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this troubleshooting guide?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The approver's name for governance",
+          "placeholder": "e.g., John Smith, Support Manager"
+        }
+      ]
+    },
+    {
+      "category": "Business Impact Levels",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "impact_descriptions",
+          "question": "How do you categorize the business impact levels for issues?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define what each impact level means for your organization",
+          "fields": [
+            {
+              "name": "Impact Level",
+              "type": "select",
+              "options": [
+                "Critical",
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Error Messages and Indicators",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "error_messages",
+          "question": "What error messages or visual indicators appear for your issues?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "List specific error messages and their context",
+          "fields": [
+            {
+              "name": "Error Message / Indicator",
+              "type": "text"
+            },
+            {
+              "name": "When It Appears",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Root Cause Categories",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "root_cause_examples",
+          "question": "What are specific examples of root causes for each category?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Provide real examples of causes for each category",
+          "fields": [
+            {
+              "name": "Category",
+              "type": "select",
+              "options": [
+                "Configuration",
+                "Access & Permissions",
+                "Integration",
+                "Environment",
+                "Product Limitation",
+                "Known Defect"
+              ]
+            },
+            {
+              "name": "Example Cause",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Escalation Information",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "escalation_requirements",
+          "question": "What information is required when escalating issues?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define what details must be collected for escalation",
+          "fields": [
+            {
+              "name": "Required Information",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Performance Metrics",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "success_metrics",
+          "question": "Which metrics will you use to measure troubleshooting success?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define how you'll measure guide effectiveness",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Review and Maintenance",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this guide be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Set the review cycle for maintaining accuracy",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Bi-annually",
+            "Annually",
+            "As needed"
+          ]
+        },
+        {
+          "question_id": "scope_items",
+          "question": "What specific items are in-scope for this guide?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Define exactly what this guide addresses",
+          "placeholder": "List specific scenarios, features, or issue types covered"
+        },
+        {
+          "question_id": "out_of_scope",
+          "question": "What is explicitly out of scope for this guide?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Prevent misuse by clarifying limitations",
+          "placeholder": "List items that require different processes or teams"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8087-b657-cfe20570aa6d",
+    "extraction_date": "2026-02-09T17:49:56.603316",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 28,
+    "substantive_sections": 17,
+    "generic_sections_excluded": 11,
+    "reorder_timestamp": "2026-02-10T11:45:09.211417",
+    "validator_version": "3.0_intelligent"
+  }
+}

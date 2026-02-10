@@ -1,0 +1,152 @@
+{
+  "document_name": "Employment Agreement",
+  "document_type": "Employment contracts",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Basic Agreement Details",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "agreement_date",
+          "question": "What is the effective date of this employment agreement?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The date when the agreement becomes legally binding"
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is the full legal name of the employing company?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Acme Corporation Inc."
+        },
+        {
+          "question_id": "company_address",
+          "question": "What is the company's principal business address?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "",
+          "placeholder": "123 Business Street, Suite 100, City, State 12345"
+        }
+      ]
+    },
+    {
+      "category": "Employment Terms",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "start_date",
+          "question": "When does employment officially begin?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The first day the employee will start working"
+        },
+        {
+          "question_id": "work_location",
+          "question": "What is the employee's primary work arrangement?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Specify if employee works at company location, from home, or combination",
+          "options": [
+            "On-site",
+            "Remote",
+            "Hybrid"
+          ]
+        },
+        {
+          "question_id": "compensation_details",
+          "question": "What is the employee's compensation structure?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "",
+          "placeholder": "Annual salary of $85,000, paid bi-weekly, subject to applicable deductions"
+        }
+      ]
+    },
+    {
+      "category": "Employee Information",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "department",
+          "question": "Which department will the employee work in?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Engineering"
+        },
+        {
+          "question_id": "employee_name",
+          "question": "What is the employee's full legal name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "John A. Smith"
+        },
+        {
+          "question_id": "employee_address",
+          "question": "What is the employee's residential address?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "",
+          "placeholder": "456 Home Avenue, Apartment 2B, City, State 12345"
+        },
+        {
+          "question_id": "job_title",
+          "question": "What is the employee's official job title?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Senior Software Engineer"
+        },
+        {
+          "question_id": "reporting_manager",
+          "question": "Who will the employee report to?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Jane Doe, Engineering Manager"
+        }
+      ]
+    },
+    {
+      "category": "Signature Details",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "authorized_signatory",
+          "question": "Who is the authorized company representative signing this agreement?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Sarah Johnson"
+        },
+        {
+          "question_id": "signatory_title",
+          "question": "What is the title of the authorized signatory?",
+          "answer_type": "text",
+          "required": true,
+          "description": "",
+          "placeholder": "Human Resources Director"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80f7-a093-deb7a9d01142",
+    "extraction_date": "2026-02-09T17:59:33.805751",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 17,
+    "substantive_sections": 8,
+    "generic_sections_excluded": 9,
+    "reorder_timestamp": "2026-02-10T11:45:09.847332",
+    "validator_version": "3.0_intelligent"
+  }
+}

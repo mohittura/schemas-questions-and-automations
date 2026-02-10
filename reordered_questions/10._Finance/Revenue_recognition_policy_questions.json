@@ -1,0 +1,141 @@
+{
+  "document_name": "Revenue Recognition Policy",
+  "document_type": "Revenue Recognition Policy",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 9,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the policy document",
+          "placeholder": "Acme SaaS Inc."
+        },
+        {
+          "question_id": "fiscal_year",
+          "question": "What fiscal year does this policy cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Shown in document overview",
+          "placeholder": "FY 2026"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What is the version number for this policy?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used for document control",
+          "placeholder": "v2.1"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this policy?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in metadata table",
+          "placeholder": "CFO Jane Smith"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this policy become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used in metadata table"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this policy last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used in metadata table"
+        }
+      ]
+    },
+    {
+      "category": "Revenue Scope",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "revenue_types",
+          "question": "Which revenue types does your company generate?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Determines which sections of the policy apply",
+          "options": [
+            "SaaS subscription revenue",
+            "Professional services revenue",
+            "Usage-based fees",
+            "Licensing revenue",
+            "One-time fees",
+            "Partnership revenue"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "SaaS Metrics",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "saas_metrics",
+          "question": "What SaaS metrics does your company track and how do they relate to revenue recognition?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Builds the SaaS metrics integration table",
+          "fields": [
+            {
+              "name": "Metric Name",
+              "type": "text"
+            },
+            {
+              "name": "Recognition Reference",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Roles and Responsibilities",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "roles_responsibilities",
+          "question": "What roles in your organization are responsible for revenue recognition tasks?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Builds the roles and responsibilities table",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Responsibility",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80a0-86e7-e988a3f0b76e",
+    "extraction_date": "2026-02-09T18:11:04.795043",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 16,
+    "substantive_sections": 11,
+    "generic_sections_excluded": 5,
+    "reorder_timestamp": "2026-02-10T11:45:06.348148",
+    "validator_version": "3.0_intelligent"
+  }
+}

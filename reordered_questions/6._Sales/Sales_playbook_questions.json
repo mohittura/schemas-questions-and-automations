@@ -1,0 +1,352 @@
+{
+  "document_name": "Sales Playbook",
+  "document_type": "Sales Playbook",
+  "estimated_completion_time": "25-35 minutes",
+  "total_questions": 23,
+  "question_categories": [
+    {
+      "category": "Product Overview",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "product_summary",
+          "question": "Provide a brief summary of your product and the problem it solves",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "High-level product description for sales team understanding",
+          "placeholder": "Our platform helps sales teams automate repetitive tasks, track customer interactions, and close deals faster by providing a unified CRM with AI-powered insights."
+        },
+        {
+          "question_id": "value_proposition",
+          "question": "What is the core benefit delivered to customers?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Primary value customers receive from your product",
+          "placeholder": "Increase sales productivity by 40% while reducing manual data entry and improving forecast accuracy"
+        },
+        {
+          "question_id": "competitive_advantage",
+          "question": "What are your key differentiators versus competitors?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Unique selling points for competitive situations",
+          "placeholder": "Only CRM with built-in AI coaching, fastest implementation time (2 weeks), native mobile experience, 99.9% uptime guarantee"
+        },
+        {
+          "question_id": "pricing_model",
+          "question": "Which pricing model best describes your offering?",
+          "answer_type": "select",
+          "required": true,
+          "description": "How customers pay for your product",
+          "options": [
+            "Subscription",
+            "Usage-based",
+            "Tiered",
+            "One-time",
+            "Hybrid"
+          ]
+        },
+        {
+          "question_id": "key_features",
+          "question": "List the major features or modules of your product",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Key capabilities that sales team should highlight",
+          "placeholder": "AI-powered lead scoring, automated email sequences, pipeline visualization, mobile app, integrations with 50+ tools"
+        }
+      ]
+    },
+    {
+      "category": "Document Information",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "product_name",
+          "question": "What is the name of your product or service?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the playbook to reference your offering",
+          "placeholder": "Acme CRM Platform"
+        },
+        {
+          "question_id": "sales_model",
+          "question": "Which sales model best describes your go-to-market approach?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the sales methodology and process steps",
+          "options": [
+            "PLG",
+            "SMB",
+            "Mid-Market",
+            "Enterprise"
+          ]
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who owns this sales playbook?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person responsible for maintaining and updating the playbook",
+          "placeholder": "VP of Sales"
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header and metadata",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What version number is this playbook?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version tracking for updates and revisions",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "last_updated",
+          "question": "When was this playbook last updated?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date of the most recent revision"
+        }
+      ]
+    },
+    {
+      "category": "Ideal Customer Profile",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "target_industries",
+          "question": "Which industries do you primarily target?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Primary industry verticals for your sales team to focus on",
+          "placeholder": "Technology, Financial Services, Healthcare, Manufacturing"
+        },
+        {
+          "question_id": "company_size",
+          "question": "What size companies are your ideal customers?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Target company size for sales qualification",
+          "options": [
+            "Startup (1-50 employees)",
+            "SMB (51-500 employees)",
+            "Mid-Market (501-5000 employees)",
+            "Enterprise (5000+ employees)"
+          ]
+        },
+        {
+          "question_id": "buyer_roles",
+          "question": "Who are the typical decision makers and influencers?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Key personas involved in the buying process",
+          "placeholder": "VP Sales (decision maker), Sales Operations (influencer), CFO (budget approver)"
+        },
+        {
+          "question_id": "primary_pain_points",
+          "question": "What problems does your product solve for customers?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Pain points sales team should uncover during discovery",
+          "placeholder": "Manual data entry, lack of pipeline visibility, inaccurate forecasting, poor lead conversion"
+        },
+        {
+          "question_id": "buying_triggers",
+          "question": "What events typically trigger customers to purchase?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Events that create urgency for purchase decisions",
+          "placeholder": "New fiscal year, rapid growth, missed revenue targets, new leadership, system migration"
+        }
+      ]
+    },
+    {
+      "category": "Sales Process",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "sales_stages",
+          "question": "Define your sales stages",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Each stage of your sales process with objectives, exit criteria, and responsible team member",
+          "fields": [
+            {
+              "name": "Stage Name",
+              "type": "text"
+            },
+            {
+              "name": "Objective",
+              "type": "text"
+            },
+            {
+              "name": "Exit Criteria",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Qualification Framework",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "qualification_criteria",
+          "question": "What are your key qualification criteria?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Framework for qualifying opportunities (e.g., BANT, MEDDICC, CHAMP)",
+          "fields": [
+            {
+              "name": "Criteria",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Messaging and Positioning",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "customer_problems",
+          "question": "What common customer problems should sales address?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Map customer pain points to your solution messaging",
+          "fields": [
+            {
+              "name": "Customer Problem",
+              "type": "text"
+            },
+            {
+              "name": "Recommended Messaging",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Objection Handling",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "common_objections",
+          "question": "What objections do prospects typically raise?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Common objections and how to handle them effectively",
+          "fields": [
+            {
+              "name": "Objection",
+              "type": "text"
+            },
+            {
+              "name": "Recommended Response",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sales Tools",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "sales_tools",
+          "question": "What tools and resources does your sales team use?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Tools that support the sales process (CRM, demo tools, etc.)",
+          "fields": [
+            {
+              "name": "Tool",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sales Metrics",
+      "order": 9,
+      "questions": [
+        {
+          "question_id": "sales_metrics",
+          "question": "What metrics and KPIs should sales track?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Key performance indicators for measuring sales success",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Customer Success Handover",
+      "order": 10,
+      "questions": [
+        {
+          "question_id": "handover_steps",
+          "question": "What steps occur when transitioning from sales to customer success?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Process for ensuring smooth customer onboarding after deal closure",
+          "fields": [
+            {
+              "name": "Step",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8060-a958-d8ed8a1e53c4",
+    "extraction_date": "2026-02-09T17:09:14.206838",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 15,
+    "substantive_sections": 14,
+    "generic_sections_excluded": 1,
+    "reorder_timestamp": "2026-02-10T11:45:08.303915",
+    "validator_version": "3.0_intelligent"
+  }
+}

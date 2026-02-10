@@ -1,0 +1,444 @@
+{
+  "document_name": "Third-party Risk Assessment Records",
+  "document_type": "Third-party risk assessment records",
+  "estimated_completion_time": "20-30 minutes",
+  "total_questions": 24,
+  "question_categories": [
+    {
+      "category": "Basic Vendor Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "assessment_date",
+          "question": "When is this assessment being conducted?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the assessment is performed"
+        },
+        {
+          "question_id": "assessed_by",
+          "question": "Who is conducting this assessment?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person or team responsible for the assessment",
+          "placeholder": "John Smith, Security Team"
+        },
+        {
+          "question_id": "vendor_name",
+          "question": "What is the name of the third-party vendor being assessed?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used to identify the vendor in all assessment records",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "service_provided",
+          "question": "What service does this vendor provide to your organization?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Describes the primary service or product the vendor delivers",
+          "placeholder": "Cloud-based CRM platform"
+        },
+        {
+          "question_id": "business_owner",
+          "question": "Who is the business owner or primary contact for this vendor relationship?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Internal stakeholder responsible for the vendor relationship",
+          "placeholder": "Sarah Johnson, Sales Director"
+        },
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this vendor be reassessed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the reassessment schedule",
+          "options": [
+            "Annual",
+            "Biannual",
+            "As Needed",
+            "Quarterly"
+          ]
+        },
+        {
+          "question_id": "vendor_status",
+          "question": "What is the current status of this vendor relationship?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Current state of the vendor engagement",
+          "options": [
+            "Proposed",
+            "Active",
+            "Under Review",
+            "Terminated"
+          ]
+        },
+        {
+          "question_id": "assessment_id",
+          "question": "What is the unique assessment ID for this evaluation?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Unique identifier for tracking this assessment",
+          "placeholder": "TPA-2026-001"
+        }
+      ]
+    },
+    {
+      "category": "Approvals",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "approvals",
+          "question": "Who are the approvers for this assessment?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Captures required approvals for the assessment",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Vendor Overview Details",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "service_category",
+          "question": "What category best describes the vendor's service?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Categorizes the type of service provided",
+          "options": [
+            "SaaS",
+            "Infrastructure",
+            "Payment",
+            "Analytics",
+            "Support",
+            "Other"
+          ]
+        },
+        {
+          "question_id": "integration_type",
+          "question": "How does this vendor integrate with your systems?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Describes the technical integration method",
+          "options": [
+            "API",
+            "Data Processing",
+            "Manual Access",
+            "No Integration"
+          ]
+        },
+        {
+          "question_id": "data_access_level",
+          "question": "What is the highest sensitivity level of data this vendor can access?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Identifies the data sensitivity classification",
+          "options": [
+            "None",
+            "Internal",
+            "Confidential",
+            "Restricted"
+          ]
+        },
+        {
+          "question_id": "hosting_model",
+          "question": "Where is the vendor's service hosted?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Indicates who manages the hosting environment",
+          "options": [
+            "Vendor Hosted",
+            "Customer Hosted"
+          ]
+        },
+        {
+          "question_id": "business_criticality",
+          "question": "How critical is this vendor to your business operations?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Assesses business impact if the service fails",
+          "options": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Data Handling",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "data_handling_items",
+          "question": "Which data handling activities apply to this vendor?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Documents how the vendor handles different types of data",
+          "fields": [
+            {
+              "name": "Category",
+              "type": "text"
+            },
+            {
+              "name": "Yes/No",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "name": "Notes",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Security Controls",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "security_controls",
+          "question": "What is the status of each security control for this vendor?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Evaluates the vendor's security control implementation",
+          "fields": [
+            {
+              "name": "Control Area",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Adequate",
+                "Partial",
+                "Unknown",
+                "Yes",
+                "No",
+                "SOC 2",
+                "ISO",
+                "None"
+              ]
+            },
+            {
+              "name": "Notes",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Authentication & Access",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "auth_access_items",
+          "question": "Which authentication and access capabilities does the vendor support?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Documents available authentication and access control features",
+          "fields": [
+            {
+              "name": "Item",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Yes",
+                "No"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Compliance Requirements",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "compliance_requirements",
+          "question": "What is the status of each compliance requirement?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Tracks compliance with legal and regulatory requirements",
+          "fields": [
+            {
+              "name": "Requirement",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Signed",
+                "Pending",
+                "Yes",
+                "No",
+                "GDPR",
+                "SOC 2",
+                "ISO",
+                "N/A"
+              ]
+            },
+            {
+              "name": "Notes",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Risk Evaluation",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "risk_factors",
+          "question": "Rate each risk area for this vendor",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Assesses specific risk categories for the vendor",
+          "fields": [
+            {
+              "name": "Risk Area",
+              "type": "text"
+            },
+            {
+              "name": "Risk Level",
+              "type": "select",
+              "options": [
+                "Low",
+                "Medium",
+                "High"
+              ]
+            },
+            {
+              "name": "Notes",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "question_id": "overall_risk",
+          "question": "What is the overall risk rating for this vendor?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Summarizes the total risk exposure",
+          "options": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "question_id": "risk_justification",
+          "question": "Provide justification for the overall risk rating",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Explains the rationale for the risk rating",
+          "placeholder": "The vendor has strong security controls but limited compliance certifications..."
+        }
+      ]
+    },
+    {
+      "category": "Risk Treatment",
+      "order": 9,
+      "questions": [
+        {
+          "question_id": "risk_decision",
+          "question": "What is the final risk treatment decision for this vendor?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Final decision on vendor approval status",
+          "options": [
+            "Approved",
+            "Approved with Conditions",
+            "Pending",
+            "Rejected"
+          ]
+        },
+        {
+          "question_id": "decision_description",
+          "question": "Describe the reasoning for this decision",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Provides context for the treatment decision",
+          "placeholder": "Vendor acceptable with current controls but requires annual review..."
+        }
+      ]
+    },
+    {
+      "category": "Mitigation Actions",
+      "order": 10,
+      "questions": [
+        {
+          "question_id": "mitigation_actions",
+          "question": "List any required mitigation actions (if applicable)",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Documents specific actions required to mitigate identified risks",
+          "fields": [
+            {
+              "name": "Action ID",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Target Date",
+              "type": "date"
+            },
+            {
+              "name": "Status",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-806c-a017-e824e1accf33",
+    "extraction_date": "2026-02-09T15:59:42.940647",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 17,
+    "substantive_sections": 15,
+    "generic_sections_excluded": 2,
+    "reorder_timestamp": "2026-02-10T11:45:07.639702",
+    "validator_version": "3.0_intelligent"
+  }
+}

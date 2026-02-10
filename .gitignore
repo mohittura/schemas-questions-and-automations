@@ -2,3 +2,4 @@
 .env
 integrationsec.txt
 page_list.txt
+__pycache__

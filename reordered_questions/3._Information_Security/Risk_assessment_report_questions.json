@@ -1,0 +1,261 @@
+{
+  "document_name": "Risk Assessment Report",
+  "document_type": "Risk Assessment Report",
+  "estimated_completion_time": "20-30 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Document Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this risk assessment be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Sets the review cycle for ongoing risk management",
+          "options": [
+            "Quarterly",
+            "Monthly",
+            "Release-based",
+            "Annually",
+            "Bi-annually"
+          ]
+        },
+        {
+          "question_id": "assessment_date",
+          "question": "When is this risk assessment being conducted?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the assessment is performed"
+        },
+        {
+          "question_id": "environment",
+          "question": "Which environment is being assessed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the context and criticality level of the assessment",
+          "options": [
+            "Production",
+            "Staging",
+            "Development",
+            "UAT",
+            "All"
+          ]
+        },
+        {
+          "question_id": "system_name",
+          "question": "What is the name of the system or application being assessed?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used to identify the system in the risk assessment",
+          "placeholder": "e.g., Customer Portal API"
+        },
+        {
+          "question_id": "prepared_by",
+          "question": "Who is preparing this risk assessment?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the person or team responsible for the assessment",
+          "placeholder": "Your name or team name"
+        },
+        {
+          "question_id": "version",
+          "question": "What is the version of this risk assessment document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version tracking for document control",
+          "placeholder": "1.0"
+        }
+      ]
+    },
+    {
+      "category": "Assumptions",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "assumptions",
+          "question": "What assumptions are you making in this risk assessment?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Documents assumptions that could affect the risk assessment validity",
+          "placeholder": "List any assumptions about the system, environment, or assessment scope"
+        }
+      ]
+    },
+    {
+      "category": "System Summary",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "data_sensitivity",
+          "question": "What is the data sensitivity level of information processed by this system?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the impact level of potential data breaches",
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "question_id": "key_components",
+          "question": "What are the key components of the system?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Identifies what parts of the system are being assessed",
+          "placeholder": "List major components like databases, APIs, services, etc."
+        },
+        {
+          "question_id": "system_purpose",
+          "question": "What is the primary purpose of this system?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Provides context for understanding the risks",
+          "placeholder": "Describe what the system does and its business function"
+        }
+      ]
+    },
+    {
+      "category": "Risk Register",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "risk_items",
+          "question": "What risks should be included in your risk register?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Each risk item with all required fields for the risk register",
+          "fields": [
+            {
+              "name": "Risk ID",
+              "type": "text"
+            },
+            {
+              "name": "Risk Description",
+              "type": "text"
+            },
+            {
+              "name": "Affected Component",
+              "type": "text"
+            },
+            {
+              "name": "Likelihood",
+              "type": "select",
+              "options": [
+                "Low",
+                "Medium",
+                "High"
+              ]
+            },
+            {
+              "name": "Impact",
+              "type": "select",
+              "options": [
+                "Low",
+                "Medium",
+                "High"
+              ]
+            },
+            {
+              "name": "Existing Control",
+              "type": "text"
+            },
+            {
+              "name": "Recommended Action",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Open",
+                "Mitigated",
+                "Accepted",
+                "Transferred"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Top Risks Summary",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "top_risks",
+          "question": "Which are your top 3-5 risks that require immediate attention?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Prioritized list of the most critical risks",
+          "fields": [
+            {
+              "name": "Rank",
+              "type": "number"
+            },
+            {
+              "name": "Risk ID",
+              "type": "text"
+            },
+            {
+              "name": "Risk Title",
+              "type": "text"
+            },
+            {
+              "name": "Reason for Priority",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Approval",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "approvals",
+          "question": "Who needs to approve this risk assessment?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Approval signatures for the risk assessment document",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-80b8-92d7-d745c087eff1",
+    "extraction_date": "2026-02-09T15:56:40.974001",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 14,
+    "substantive_sections": 11,
+    "generic_sections_excluded": 3,
+    "reorder_timestamp": "2026-02-10T11:45:07.290036",
+    "validator_version": "3.0_intelligent"
+  }
+}

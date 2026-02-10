@@ -1,0 +1,205 @@
+{
+  "document_name": "Escalation Procedures",
+  "document_type": "Escalation Procedures",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header and overview section",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What is the document version number?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Document version tracking",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this document last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "For tracking document currency"
+        },
+        {
+          "question_id": "product_platform",
+          "question": "What product or platform does this escalation procedure cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Replaces {{Product Name}} in document metadata",
+          "placeholder": "Acme Cloud Platform"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this escalation procedure become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when procedures go into effect"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this escalation procedure document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person who authorized this document",
+          "placeholder": "Director of Customer Support"
+        }
+      ]
+    },
+    {
+      "category": "Process Customization",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "escalation_objectives",
+          "question": "What are the main goals of escalation in your organization?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Primary objectives that drive your escalation process",
+          "placeholder": "Faster resolution, customer retention, SLA protection, incident control, etc."
+        },
+        {
+          "question_id": "scope_items",
+          "question": "What specific types of issues should be covered by these escalation procedures?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Define what falls under escalation vs. normal support",
+          "placeholder": "Unresolved technical issues, product defects, high-impact incidents, SLA risks, security concerns"
+        },
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this escalation procedure be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Schedule for reviewing and updating the procedure",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Semi-annually",
+            "Annually"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Escalation Types",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "escalation_types",
+          "question": "What types of escalations does your organization handle?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define the categories of escalations your team manages",
+          "fields": [
+            {
+              "name": "Escalation Type",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Escalation Levels",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "escalation_levels",
+          "question": "What are your escalation levels and who owns each level?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define the hierarchy of escalation and responsible teams",
+          "fields": [
+            {
+              "name": "Level",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Performance Metrics",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "metrics",
+          "question": "What metrics will you use to measure escalation performance?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define how you'll measure escalation process effectiveness",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Required Information",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "required_info",
+          "question": "What information must be provided when escalating an issue?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Standard information requirements for escalations",
+          "fields": [
+            {
+              "name": "Required Information",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8070-a7e7-de003a41a034",
+    "extraction_date": "2026-02-09T17:51:29.439327",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 22,
+    "substantive_sections": 13,
+    "generic_sections_excluded": 9,
+    "reorder_timestamp": "2026-02-10T11:45:09.395685",
+    "validator_version": "3.0_intelligent"
+  }
+}

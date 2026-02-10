@@ -1,0 +1,168 @@
+{
+  "document_name": "Onboarding Documentation",
+  "document_type": "Onboarding Documentation",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "last_review_date",
+          "question": "When was this document last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date of the most recent review for document maintenance"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this onboarding documentation become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The date when this onboarding process becomes active"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who approved this onboarding documentation?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name or title of the person who approved this document",
+          "placeholder": "HR Director Name"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who is the document owner responsible for maintaining this onboarding documentation?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the department or person responsible for this document",
+          "placeholder": "HR Department"
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the document to personalize onboarding content",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "version_number",
+          "question": "What is the current version number of this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used for version control and tracking document updates",
+          "placeholder": "1.0"
+        }
+      ]
+    },
+    {
+      "category": "Roles and Responsibilities",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "hr_responsibilities",
+          "question": "What are the specific responsibilities of HR during onboarding?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Detailed responsibilities for HR in the onboarding process",
+          "placeholder": "Managing onboarding documentation, completing employment paperwork, scheduling orientation sessions..."
+        },
+        {
+          "question_id": "manager_responsibilities",
+          "question": "What are the hiring manager's responsibilities during onboarding?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Detailed responsibilities for the hiring manager",
+          "placeholder": "Setting expectations, introducing team members, assigning initial tasks..."
+        },
+        {
+          "question_id": "it_responsibilities",
+          "question": "What are IT/Operations responsibilities during onboarding?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Detailed responsibilities for IT/Operations team",
+          "placeholder": "Setting up equipment, creating system accounts, security access..."
+        },
+        {
+          "question_id": "employee_responsibilities",
+          "question": "What are the new employee's responsibilities during onboarding?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Detailed responsibilities for the new employee",
+          "placeholder": "Completing required training, asking questions, providing feedback..."
+        }
+      ]
+    },
+    {
+      "category": "Review Process",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "review_schedule",
+          "question": "How often should this onboarding documentation be reviewed and updated?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Establish the review cycle for maintaining current onboarding processes",
+          "options": [
+            "Quarterly",
+            "Semi-annually",
+            "Annually",
+            "As needed"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Onboarding Timeline",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "onboarding_timeline_items",
+          "question": "What are the key timeline milestones for your onboarding process?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define the timeline and focus areas for new employee integration",
+          "fields": [
+            {
+              "name": "Timeline",
+              "type": "text"
+            },
+            {
+              "name": "Focus Area",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Success Metrics",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "success_metrics",
+          "question": "What metrics will you use to measure onboarding success?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Define how you will measure if the onboarding process is successful",
+          "placeholder": "Time to productivity, employee satisfaction scores, retention rates after 90 days..."
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-802b-bb9c-d2a1e7c8e023",
+    "extraction_date": "2026-02-09T18:00:07.711878",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 27,
+    "substantive_sections": 18,
+    "generic_sections_excluded": 9,
+    "reorder_timestamp": "2026-02-10T11:45:10.102993",
+    "validator_version": "3.0_intelligent"
+  }
+}

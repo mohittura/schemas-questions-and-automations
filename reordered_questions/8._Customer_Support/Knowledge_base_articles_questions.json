@@ -1,0 +1,202 @@
+{
+  "document_name": "Knowledge Base Article Guidelines",
+  "document_type": "Knowledge Base Article Guidelines",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 12,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document overview section",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "product_name",
+          "question": "What is the name of your product or platform?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document information table",
+          "placeholder": "Acme Platform"
+        },
+        {
+          "question_id": "knowledge_base_url",
+          "question": "What is your knowledge base URL?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document information table",
+          "placeholder": "https://help.acme.com"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What is the version number for this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document information table",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When does this document become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used in the document information table"
+        },
+        {
+          "question_id": "approver_name",
+          "question": "Who approves this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the document information table",
+          "placeholder": "Documentation Manager"
+        }
+      ]
+    },
+    {
+      "category": "Knowledge Base Objectives",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "primary_goals",
+          "question": "What are the primary goals of your knowledge base?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Defines the main objectives for your knowledge base",
+          "options": [
+            "Self-service support",
+            "Onboarding assistance",
+            "Ticket reduction",
+            "Feature education",
+            "Product adoption",
+            "Customer empowerment"
+          ]
+        },
+        {
+          "question_id": "scope_items",
+          "question": "Which specific document types will these guidelines cover?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Defines the scope of documentation covered by these guidelines",
+          "options": [
+            "Help center articles",
+            "How-to guides",
+            "Troubleshooting documentation",
+            "Feature explanations",
+            "Setup and onboarding instructions",
+            "FAQs",
+            "Video scripts",
+            "API documentation"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Article Types",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "article_types",
+          "question": "What types of articles will your knowledge base include?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define the different article formats and their purposes",
+          "fields": [
+            {
+              "name": "Article Type",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Performance Metrics",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "metrics",
+          "question": "How will you measure knowledge base performance?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define key metrics and what they measure",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Review Process",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "review_schedule",
+          "question": "How often should knowledge base articles be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Defines the review frequency for maintaining content accuracy",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Bi-annually",
+            "Annually",
+            "As needed"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "User Types and Content Approach",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "user_types",
+          "question": "What user types does your knowledge base serve?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define user segments and how content should be tailored for each",
+          "fields": [
+            {
+              "name": "User Type",
+              "type": "text"
+            },
+            {
+              "name": "Content Approach",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8026-b886-f1a5d1f5f9c9",
+    "extraction_date": "2026-02-09T17:49:21.877045",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 27,
+    "substantive_sections": 14,
+    "generic_sections_excluded": 13,
+    "reorder_timestamp": "2026-02-10T11:45:09.336438",
+    "validator_version": "3.0_intelligent"
+  }
+}

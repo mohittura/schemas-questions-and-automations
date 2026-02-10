@@ -1,0 +1,258 @@
+{
+  "document_name": "Release Notes",
+  "document_type": "Release Notes",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Release Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "product_name",
+          "question": "What is the name of the product?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the header of the release notes",
+          "placeholder": "e.g. MyApp Pro"
+        },
+        {
+          "question_id": "release_version",
+          "question": "What version number is this release?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Displayed prominently in header",
+          "placeholder": "e.g. 2.4.0"
+        },
+        {
+          "question_id": "release_date",
+          "question": "What is the release date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Shown in header"
+        },
+        {
+          "question_id": "platform",
+          "question": "Which platform(s) does this release affect?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines scope of release",
+          "options": [
+            "Web",
+            "iOS",
+            "Android",
+            "API",
+            "All Platforms"
+          ]
+        },
+        {
+          "question_id": "release_type",
+          "question": "What type of release is this?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Indicates impact level",
+          "options": [
+            "Major",
+            "Minor",
+            "Patch",
+            "Hotfix"
+          ]
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Who owns this document?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines review responsibility",
+          "options": [
+            "Product",
+            "Engineering"
+          ]
+        },
+        {
+          "question_id": "prepared_by",
+          "question": "Who prepared these release notes?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Contact shown in header",
+          "placeholder": "e.g. Jane Doe, Product Manager"
+        }
+      ]
+    },
+    {
+      "category": "Release Summary",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "release_summary",
+          "question": "Provide a short overview of this release.",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "High-level summary for stakeholders",
+          "placeholder": "This release focuses on improving user management capabilities, enhancing system performance, and resolving several stability issues reported by users."
+        }
+      ]
+    },
+    {
+      "category": "New Features",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "new_features",
+          "question": "What new features are included in this release?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Each feature will appear in section 2.1",
+          "fields": [
+            {
+              "name": "Feature Name",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Impacted Users",
+              "type": "text"
+            },
+            {
+              "name": "Notes",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Enhancements",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "enhancements",
+          "question": "What enhancements are included in this release?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Each enhancement will appear in section 2.2",
+          "fields": [
+            {
+              "name": "Enhancement",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Benefit",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Bug Fixes",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "bug_fixes",
+          "question": "Which bugs were fixed in this release?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Each fix will appear in section 3",
+          "fields": [
+            {
+              "name": "Issue ID",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Resolution",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Known Issues",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "known_issues",
+          "question": "Are there any known issues not yet resolved?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Each known issue will appear in section 4",
+          "fields": [
+            {
+              "name": "Issue ID",
+              "type": "text"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Workaround",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Deprecated Features",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "deprecated_features",
+          "question": "Are any features deprecated or removed?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Each deprecated/removed feature will appear in section 6",
+          "fields": [
+            {
+              "name": "Feature",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Deprecated",
+                "Removed"
+              ]
+            },
+            {
+              "name": "Replacement",
+              "type": "text"
+            },
+            {
+              "name": "Effective Date",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8031-aa2e-d288280ceeba",
+    "extraction_date": "2026-02-09T15:51:15.763020",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 12,
+    "substantive_sections": 9,
+    "generic_sections_excluded": 3,
+    "reorder_timestamp": "2026-02-10T11:45:06.982079",
+    "validator_version": "3.0_intelligent"
+  }
+}

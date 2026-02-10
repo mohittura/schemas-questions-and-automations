@@ -1,0 +1,161 @@
+{
+  "document_name": "Exit Process Documentation",
+  "document_type": "Exit Process Documentation",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 10,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "document_version",
+          "question": "What is the current version number for this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version tracking for document control",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "approver_name",
+          "question": "Who is the approver for this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "The person who approves and owns this document",
+          "placeholder": "HR Director Name"
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the document to personalize the exit process documentation",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When should this exit process become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "The date when this process will be officially implemented"
+        }
+      ]
+    },
+    {
+      "category": "Scope and Applicability",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "employee_types",
+          "question": "Which employee types does this exit process apply to?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all that apply to your organization",
+          "options": [
+            "Voluntary resignations",
+            "Company terminations",
+            "Contract employees",
+            "Probationary employees",
+            "Retirements",
+            "Temporary employees",
+            "Part-time employees"
+          ]
+        },
+        {
+          "question_id": "scope_exceptions",
+          "question": "Are there any exceptions or special cases not covered in the standard scope?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Any special cases or exceptions to the standard process",
+          "placeholder": "e.g., Senior executives may have additional requirements..."
+        }
+      ]
+    },
+    {
+      "category": "Roles and Responsibilities",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "roles_responsibilities",
+          "question": "Define the roles and their responsibilities in the exit process",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "List each role involved in exit process and their specific responsibilities",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Responsibilities",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Success Metrics",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "success_metrics",
+          "question": "What metrics will you use to measure the effectiveness of your exit process?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define metrics to track how well your exit process is working",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Review and Maintenance",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this document be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Frequency of document review to ensure it stays current",
+          "options": [
+            "Quarterly",
+            "Semi-annually",
+            "Annually",
+            "Bi-annually"
+          ]
+        },
+        {
+          "question_id": "next_review_date",
+          "question": "When is the next scheduled review date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Next date when this document should be reviewed and potentially updated"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8035-92c9-fced59bc15a4",
+    "extraction_date": "2026-02-09T18:03:49.774214",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 18,
+    "substantive_sections": 10,
+    "generic_sections_excluded": 8,
+    "reorder_timestamp": "2026-02-10T11:45:10.005105",
+    "validator_version": "3.0_intelligent"
+  }
+}

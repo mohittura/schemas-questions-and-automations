@@ -1,0 +1,226 @@
+{
+  "document_name": "Pricing and discount guidelines",
+  "document_type": "Pricing and discount guidelines",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 11,
+  "question_categories": [
+    {
+      "category": "Pricing Tiers",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "pricing_tiers",
+          "question": "Define your pricing tiers",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Add each pricing tier with all required fields",
+          "fields": [
+            {
+              "name": "Plan / Tier",
+              "type": "text"
+            },
+            {
+              "name": "Target Customer",
+              "type": "text"
+            },
+            {
+              "name": "Key Features",
+              "type": "text"
+            },
+            {
+              "name": "Billing Cycle",
+              "type": "select",
+              "options": [
+                "Monthly",
+                "Annual",
+                "Monthly / Annual",
+                "Quarterly",
+                "One-time"
+              ]
+            },
+            {
+              "name": "Standard Price",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Document Metadata",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "pricing_model",
+          "question": "Which pricing model(s) do you use?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Select all that apply",
+          "options": [
+            "Subscription",
+            "Usage-Based",
+            "Tiered",
+            "One-time",
+            "Hybrid"
+          ]
+        },
+        {
+          "question_id": "product_name",
+          "question": "What product or service does this pricing guide cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header",
+          "placeholder": "CloudPlatform Pro"
+        },
+        {
+          "question_id": "document_owner",
+          "question": "Which team owns this pricing guide?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines approval authority",
+          "options": [
+            "Sales",
+            "Finance",
+            "Revenue Operations",
+            "Product",
+            "Executive"
+          ]
+        },
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in document header",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What version number should this document be?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used for version control",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "last_updated",
+          "question": "What date should be shown as last updated?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used for version tracking"
+        }
+      ]
+    },
+    {
+      "category": "Discount Guidelines",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "customer_discounts",
+          "question": "What are your maximum standard discounts by customer type?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define discount limits for each customer scenario",
+          "fields": [
+            {
+              "name": "Customer Type",
+              "type": "text"
+            },
+            {
+              "name": "Maximum Standard Discount",
+              "type": "text"
+            },
+            {
+              "name": "Typical Use Case",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "question_id": "approval_matrix",
+          "question": "Who must approve each discount range?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Map discount ranges to approval authority",
+          "fields": [
+            {
+              "name": "Discount Range",
+              "type": "text"
+            },
+            {
+              "name": "Approval Required",
+              "type": "select",
+              "options": [
+                "Account Executive",
+                "Sales Manager",
+                "Sales Director",
+                "Finance",
+                "Executive Approval"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Special Scenarios",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "special_scenarios",
+          "question": "What special pricing scenarios should be covered?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define guidelines for non-standard situations",
+          "fields": [
+            {
+              "name": "Scenario",
+              "type": "text"
+            },
+            {
+              "name": "Guideline",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Evaluation Metrics",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "evaluation_metrics",
+          "question": "Which metrics will you track to evaluate pricing effectiveness?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define key performance indicators for pricing",
+          "fields": [
+            {
+              "name": "Metric",
+              "type": "text"
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8067-b02f-f534ff2a0689",
+    "extraction_date": "2026-02-09T17:09:56.341381",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 12,
+    "substantive_sections": 9,
+    "generic_sections_excluded": 3,
+    "reorder_timestamp": "2026-02-10T11:45:08.379673",
+    "validator_version": "3.0_intelligent"
+  }
+}

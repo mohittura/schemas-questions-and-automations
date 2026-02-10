@@ -1,0 +1,239 @@
+{
+  "document_name": "Internal Audit Report",
+  "document_type": "Internal Audit Report",
+  "estimated_completion_time": "20-30 minutes",
+  "total_questions": 13,
+  "question_categories": [
+    {
+      "category": "Basic Audit Information",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is the name of your organization?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in the audit summary header",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "audit_area",
+          "question": "What department or system is being audited?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Defines the scope of the audit",
+          "placeholder": "Accounts Payable / SAP Production System"
+        },
+        {
+          "question_id": "report_date",
+          "question": "What is the report issuance date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used for version control and tracking"
+        },
+        {
+          "question_id": "audit_type",
+          "question": "What type of audit is this?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines the audit methodology focus",
+          "options": [
+            "Operational",
+            "Security",
+            "Compliance"
+          ]
+        },
+        {
+          "question_id": "audit_period",
+          "question": "What period does this audit cover?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Shows the timeframe being evaluated",
+          "placeholder": "January 1, 2024 – March 31, 2024"
+        },
+        {
+          "question_id": "overall_rating",
+          "question": "What is the overall audit rating?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Summarizes the audit conclusion",
+          "options": [
+            "Effective",
+            "Needs Improvement",
+            "High Risk"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Audit Objectives & Scope",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "business_objectives",
+          "question": "List the specific business objectives this audit supports",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Defines why the audit is being performed",
+          "placeholder": "Ensure SOX compliance\nReduce financial misstatement risk\nImprove process efficiency"
+        },
+        {
+          "question_id": "applicable_standards",
+          "question": "Which internal policies or external standards apply?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Sets the compliance baseline",
+          "placeholder": "SOX 404\nISO 27001\nCompany Policy 3.2"
+        },
+        {
+          "question_id": "out_of_scope",
+          "question": "What is explicitly out of scope for this audit?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Prevents scope creep",
+          "placeholder": "Legacy system XYZ\nThird-party vendor processes"
+        }
+      ]
+    },
+    {
+      "category": "Findings Summary",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "findings_count",
+          "question": "How many findings were identified by severity?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Provides executive summary of issue volume",
+          "fields": [
+            {
+              "name": "Severity",
+              "type": "select",
+              "options": [
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Count",
+              "type": "number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Detailed Findings",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "detailed_findings",
+          "question": "Provide details for each audit finding",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Each finding will generate its own section in the report",
+          "fields": [
+            {
+              "name": "Finding ID",
+              "type": "text"
+            },
+            {
+              "name": "Title",
+              "type": "text"
+            },
+            {
+              "name": "Severity",
+              "type": "select",
+              "options": [
+                "High",
+                "Medium",
+                "Low"
+              ]
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Target Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Control Assessments",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "control_areas",
+          "question": "Assess the effectiveness of key control areas",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Standardized control evaluation",
+          "fields": [
+            {
+              "name": "Control Area",
+              "type": "text"
+            },
+            {
+              "name": "Assessment",
+              "type": "select",
+              "options": [
+                "Effective",
+                "Partial"
+              ]
+            },
+            {
+              "name": "Summary",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Management Sign-offs",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "signatories",
+          "question": "Who are the signatories for management acknowledgement?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Required for report finalization",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8098-8438-c8683305cd82",
+    "extraction_date": "2026-02-09T17:02:14.954399",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 13,
+    "substantive_sections": 12,
+    "generic_sections_excluded": 1,
+    "reorder_timestamp": "2026-02-10T11:45:07.946303",
+    "validator_version": "3.0_intelligent"
+  }
+}

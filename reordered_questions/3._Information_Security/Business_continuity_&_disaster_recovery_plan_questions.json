@@ -1,0 +1,286 @@
+{
+  "document_name": "Business Continuity & Disaster Recovery Plan",
+  "document_type": "Business Continuity & Disaster Recovery Plan",
+  "estimated_completion_time": "25-35 minutes",
+  "total_questions": 15,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "organization_name",
+          "question": "What is your organization or product name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used throughout the document to identify the organization",
+          "placeholder": "Acme Corp"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What is the initial version number for this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Document version tracking",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "classification",
+          "question": "What is the classification level of this document?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Document access and distribution restrictions",
+          "options": [
+            "Internal",
+            "Confidential",
+            "Restricted",
+            "Public"
+          ]
+        },
+        {
+          "question_id": "security_owner",
+          "question": "Who is the Security Owner or Team responsible for this plan?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Person or team with authority over security incidents and recovery",
+          "placeholder": "Security Team / John Smith"
+        },
+        {
+          "question_id": "review_cycle",
+          "question": "How often should this document be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines review frequency for plan updates",
+          "options": [
+            "Annual",
+            "Semi-annual",
+            "Quarterly",
+            "Monthly"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Recovery Objectives",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "rto_targets",
+          "question": "What are your Recovery Time Objective (RTO) targets by system type?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Maximum acceptable downtime before service restoration",
+          "fields": [
+            {
+              "name": "System Type",
+              "type": "text"
+            },
+            {
+              "name": "RTO Target",
+              "type": "text",
+              "options": []
+            }
+          ]
+        },
+        {
+          "question_id": "rpo_targets",
+          "question": "What are your Recovery Point Objective (RPO) targets by system type?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Maximum acceptable data loss measured in time",
+          "fields": [
+            {
+              "name": "System Type",
+              "type": "text"
+            },
+            {
+              "name": "RPO Target",
+              "type": "text",
+              "options": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "System Scope & Environment",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "critical_services",
+          "question": "List your critical services that must be protected",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Core services that require continuity planning",
+          "placeholder": "Authentication, API Gateway, Database, Payment Processing"
+        },
+        {
+          "question_id": "primary_hosting",
+          "question": "What is your primary hosting environment?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Primary infrastructure platform for recovery planning",
+          "options": [
+            "AWS",
+            "GCP",
+            "Azure",
+            "Hybrid",
+            "On-premises",
+            "Multi-cloud"
+          ]
+        },
+        {
+          "question_id": "system_scope",
+          "question": "What systems does this plan cover?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Defines the boundaries of what this BC/DR plan protects",
+          "placeholder": "SaaS platform, internal systems, cloud infrastructure"
+        }
+      ]
+    },
+    {
+      "category": "Critical Security Functions",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "critical_functions",
+          "question": "What are your critical security functions and their priorities?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Security functions that must be maintained during incidents",
+          "fields": [
+            {
+              "name": "Function",
+              "type": "text"
+            },
+            {
+              "name": "Impact if Unavailable",
+              "type": "text"
+            },
+            {
+              "name": "Priority",
+              "type": "select",
+              "options": [
+                "Critical",
+                "High",
+                "Medium",
+                "Low"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Continuity Strategies",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "continuity_strategies",
+          "question": "What continuity strategies will you implement for each area?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Specific approaches to maintain operations during disruptions",
+          "fields": [
+            {
+              "name": "Area",
+              "type": "text"
+            },
+            {
+              "name": "Strategy",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Backup Requirements",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "backup_requirements",
+          "question": "What are your backup requirements by data type?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Backup schedule and frequency for different data types",
+          "fields": [
+            {
+              "name": "Data Type",
+              "type": "text"
+            },
+            {
+              "name": "Backup Frequency",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Communication Plan",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "communication_stages",
+          "question": "What are your communication stages during an incident?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Who needs to be informed at each stage and how",
+          "fields": [
+            {
+              "name": "Stage",
+              "type": "text"
+            },
+            {
+              "name": "Audience",
+              "type": "text"
+            },
+            {
+              "name": "Method",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Team Roles and Responsibilities",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "team_roles",
+          "question": "Who are your team members and what are their responsibilities?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Actual team members and their incident response duties",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "text"
+            },
+            {
+              "name": "Responsibility",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8046-92f6-f08975735c28",
+    "extraction_date": "2026-02-09T16:01:09.796768",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 28,
+    "substantive_sections": 19,
+    "generic_sections_excluded": 9,
+    "reorder_timestamp": "2026-02-10T11:45:07.359238",
+    "validator_version": "3.0_intelligent"
+  }
+}

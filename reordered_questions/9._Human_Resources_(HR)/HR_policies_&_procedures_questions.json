@@ -1,0 +1,173 @@
+{
+  "document_name": "HR Policies & Procedures",
+  "document_type": "HR Policies & Procedures",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 10,
+  "question_categories": [
+    {
+      "category": "Document Metadata",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company's legal name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Replaces {{Company Name}} placeholder throughout the document",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "document_version",
+          "question": "What version number should this document be?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used for document version control",
+          "placeholder": "1.0"
+        },
+        {
+          "question_id": "effective_date",
+          "question": "When should these HR policies become effective?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Sets the official start date for these policies"
+        },
+        {
+          "question_id": "approved_by",
+          "question": "Who is the authorized approver for this HR policy document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name or title of person who approved this document",
+          "placeholder": "Chief Human Resources Officer"
+        },
+        {
+          "question_id": "last_review_date",
+          "question": "When was this document last reviewed?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Used for tracking document review cycles"
+        }
+      ]
+    },
+    {
+      "category": "Document Information Table",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "document_metadata",
+          "question": "Complete the document metadata fields",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Fills in the document information table at the beginning of the policy",
+          "fields": [
+            {
+              "name": "Document Name",
+              "type": "text"
+            },
+            {
+              "name": "Department",
+              "type": "text"
+            },
+            {
+              "name": "Organization",
+              "type": "text"
+            },
+            {
+              "name": "Document Owner",
+              "type": "text"
+            },
+            {
+              "name": "Version",
+              "type": "text"
+            },
+            {
+              "name": "Effective Date",
+              "type": "date"
+            },
+            {
+              "name": "Last Review Date",
+              "type": "date"
+            },
+            {
+              "name": "Approved By",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Employment Scope",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "geographic_variations",
+          "question": "Do you need different policy versions for different geographic locations?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Determines if location-specific policy variations are needed",
+          "options": [
+            "Yes - multiple locations with different laws",
+            "Yes - but minor variations only",
+            "No - single location or consistent globally"
+          ]
+        },
+        {
+          "question_id": "employment_types",
+          "question": "Which employment types are covered by these policies?",
+          "answer_type": "multi_select",
+          "required": true,
+          "description": "Determines which worker categories these policies apply to",
+          "options": [
+            "Full-time employees",
+            "Part-time employees",
+            "Contract employees",
+            "Temporary staff",
+            "Interns",
+            "Consultants"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Policy Review Process",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "review_frequency",
+          "question": "How often should this HR policy document be reviewed?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Sets the mandatory review schedule for keeping policies current",
+          "options": [
+            "Annually",
+            "Every 2 years",
+            "Every 3 years",
+            "As needed"
+          ]
+        },
+        {
+          "question_id": "review_responsible_party",
+          "question": "Who is responsible for reviewing and updating this document?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Identifies the person or role accountable for maintaining this document",
+          "placeholder": "Human Resources Director"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-806c-b719-c26618aafd3a",
+    "extraction_date": "2026-02-09T17:58:54.184976",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 28,
+    "substantive_sections": 13,
+    "generic_sections_excluded": 15,
+    "reorder_timestamp": "2026-02-10T11:45:09.831539",
+    "validator_version": "3.0_intelligent"
+  }
+}

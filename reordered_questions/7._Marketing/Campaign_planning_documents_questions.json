@@ -1,0 +1,266 @@
+{
+  "document_name": "Campaign Planning Document",
+  "document_type": "Campaign Planning Document",
+  "estimated_completion_time": "15-20 minutes",
+  "total_questions": 16,
+  "question_categories": [
+    {
+      "category": "Target Audience Details",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "audience_characteristics",
+          "question": "What are the key characteristics of your target audience?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Add each audience characteristic with description",
+          "fields": [
+            {
+              "name": "Attribute",
+              "type": "select",
+              "options": [
+                "Buying Intent",
+                "Decision Drivers",
+                "Information Sources",
+                "Buying Stage",
+                "Pain Points",
+                "Demographics",
+                "Firmographics"
+              ]
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Campaign Overview",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "company_name",
+          "question": "What is your company name?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Used in campaign overview header",
+          "placeholder": "Acme Corporation"
+        },
+        {
+          "question_id": "campaign_goal",
+          "question": "What is the primary goal of this campaign?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Defines the main objective of the campaign",
+          "placeholder": "Generate 500 qualified leads for our new product launch"
+        },
+        {
+          "question_id": "budget_range",
+          "question": "What is your budget range for this campaign?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Sets budget expectations",
+          "placeholder": "$50,000 - $75,000"
+        },
+        {
+          "question_id": "target_audience",
+          "question": "Who is your target audience?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Defines who the campaign will reach",
+          "placeholder": "IT decision-makers in mid-market companies (100-1000 employees)"
+        },
+        {
+          "question_id": "campaign_timeline",
+          "question": "What is the campaign timeline?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Sets the campaign duration",
+          "placeholder": "Q2 2026 (April 1 - June 30)"
+        }
+      ]
+    },
+    {
+      "category": "Timeline",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "campaign_start_date",
+          "question": "What is your campaign start date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When the campaign begins"
+        },
+        {
+          "question_id": "campaign_end_date",
+          "question": "What is your campaign end date?",
+          "answer_type": "date",
+          "required": true,
+          "description": "When the campaign ends"
+        },
+        {
+          "question_id": "campaign_phases",
+          "question": "What are your campaign phases and activities?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define campaign phases and key activities",
+          "fields": [
+            {
+              "name": "Phase",
+              "type": "select",
+              "options": [
+                "Preparation",
+                "Launch",
+                "Optimization",
+                "Closure",
+                "Planning",
+                "Execution",
+                "Analysis"
+              ]
+            },
+            {
+              "name": "Activity",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Channel Selection",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "selected_channels",
+          "question": "Which channels will you use for this campaign?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Select channels and define their purpose for your campaign",
+          "fields": [
+            {
+              "name": "Channel",
+              "type": "select",
+              "options": [
+                "Paid Media",
+                "Email Marketing",
+                "Website / Landing Page",
+                "Social Media",
+                "Sales Enablement",
+                "Content Marketing",
+                "Events",
+                "PR",
+                "Direct Mail"
+              ]
+            },
+            {
+              "name": "Purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Budget Details",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "total_budget",
+          "question": "What is your total campaign budget?",
+          "answer_type": "number",
+          "required": true,
+          "description": "Total budget amount for allocation",
+          "placeholder": "75000"
+        },
+        {
+          "question_id": "currency",
+          "question": "What currency?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Currency for budget display",
+          "options": [
+            "USD",
+            "EUR",
+            "GBP",
+            "CAD",
+            "AUD",
+            "JPY",
+            "Other"
+          ]
+        },
+        {
+          "question_id": "budget_categories",
+          "question": "How should budget be allocated across categories?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Define budget categories and allocation rationale",
+          "fields": [
+            {
+              "name": "Category",
+              "type": "select",
+              "options": [
+                "Paid Distribution",
+                "Creative Production",
+                "Tools / Platforms",
+                "Contingency",
+                "Personnel",
+                "Research",
+                "Testing"
+              ]
+            },
+            {
+              "name": "Allocation Logic",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Success Metrics",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "primary_kpi_targets",
+          "question": "What are your primary KPI targets?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Main metrics to measure campaign success",
+          "placeholder": "500 MQLs, 2.5% conversion rate, $50 cost per lead"
+        },
+        {
+          "question_id": "secondary_kpi_targets",
+          "question": "What are your secondary KPI targets?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Additional metrics to track performance",
+          "placeholder": "10,000 website visits, 25% email open rate, 5% CTR"
+        },
+        {
+          "question_id": "baseline_metrics",
+          "question": "What are your current baseline metrics?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Starting point for measuring improvement",
+          "placeholder": "Current conversion rate: 1.5%, Current monthly leads: 200"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-805e-916a-dc6935ae807c",
+    "extraction_date": "2026-02-09T17:20:40.399206",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 23,
+    "substantive_sections": 14,
+    "generic_sections_excluded": 9,
+    "reorder_timestamp": "2026-02-10T11:45:08.506774",
+    "validator_version": "3.0_intelligent"
+  }
+}

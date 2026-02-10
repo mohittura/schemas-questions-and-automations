@@ -1,0 +1,292 @@
+{
+  "document_name": "Technical Design Specification",
+  "document_type": "Technical Design Specification",
+  "estimated_completion_time": "25-35 minutes",
+  "total_questions": 12,
+  "question_categories": [
+    {
+      "category": "Document Sign-off",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "signoffs",
+          "question": "Who must sign off on this Technical Design Specification?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Completes the Document Signoff table",
+          "fields": [
+            {
+              "name": "Role",
+              "type": "select",
+              "options": [
+                "Engineering Lead",
+                "Architecture Lead",
+                "Security Lead",
+                "Product Manager",
+                "QA Lead",
+                "DevOps Lead"
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Document Overview & Scope",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "doc_overview",
+          "question": "What key items does this Technical Design Specification define for your project?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Replaces the generic bullet list in section 0.3 Overview",
+          "placeholder": "e.g., Microservices architecture, component breakdown, REST standards, GitLab CI/CD, full requirements traceability"
+        },
+        {
+          "question_id": "system_scope",
+          "question": "Describe the scope of your system—what is in-scope and out-of-scope?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Populates section 1.2 Scope",
+          "placeholder": "In-scope: user auth, payment processing, admin portal. Out-of-scope: mobile apps, third-party billing"
+        },
+        {
+          "question_id": "doc_summary",
+          "question": "Provide a short summary of this document and its key sections for section 1.5 Overview",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Gives readers a quick understanding of document contents",
+          "placeholder": "This document outlines the cloud-native architecture, microservice decomposition, and coding standards for..."
+        }
+      ]
+    },
+    {
+      "category": "Change Record",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "change_log",
+          "question": "Enter the initial version and any subsequent changes to this document",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Maintains the Document Change Record table",
+          "fields": [
+            {
+              "name": "Version",
+              "type": "text"
+            },
+            {
+              "name": "Date",
+              "type": "date"
+            },
+            {
+              "name": "Description",
+              "type": "text"
+            },
+            {
+              "name": "Author",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Definitions & Acronyms",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "glossary_items",
+          "question": "What terms and acronyms need defining for your project?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Builds the Term/Definition table in section 1.3",
+          "fields": [
+            {
+              "name": "Term",
+              "type": "text"
+            },
+            {
+              "name": "Definition",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "System Overview",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "system_characteristics",
+          "question": "List the top 5–7 defining characteristics of your system (e.g., cloud-native, event-driven, serverless)",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Feeds section 2 System Overview characteristics",
+          "placeholder": "Cloud-native, Kubernetes-orchestrated, event-driven, GDPR-compliant, multi-tenant"
+        },
+        {
+          "question_id": "architecture_blurb",
+          "question": "In 2–3 sentences, summarize your system’s high-level architecture",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Provides architecture narrative for section 2 System Overview",
+          "placeholder": "A microservice architecture running on Azure AKS, exposing REST/GraphQL APIs, backed by Postgres and Redis..."
+        }
+      ]
+    },
+    {
+      "category": "Naming Conventions",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "naming_standards",
+          "question": "Which naming conventions will your project adopt?",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Populates the Element/Standard table in section 4.3",
+          "fields": [
+            {
+              "name": "Element",
+              "type": "text"
+            },
+            {
+              "name": "Standard",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Development Tools",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "dev_tools",
+          "question": "List the development tools your team will use, grouped by type",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Fills the Tool Type/Example table in section 4.5",
+          "fields": [
+            {
+              "name": "Tool Type",
+              "type": "select",
+              "options": [
+                "Source Control",
+                "CI/CD",
+                "Containerization",
+                "Orchestration",
+                "Monitoring",
+                "IDE",
+                "Testing",
+                "Security Scanning"
+              ]
+            },
+            {
+              "name": "Example",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Requirements Traceability",
+      "order": 8,
+      "questions": [
+        {
+          "question_id": "req_trace_matrix",
+          "question": "Map your software requirements to components and verification methods",
+          "answer_type": "structured_list",
+          "required": true,
+          "description": "Creates the traceability matrix in section 6",
+          "fields": [
+            {
+              "name": "Requirement ID",
+              "type": "text"
+            },
+            {
+              "name": "Requirement Description",
+              "type": "text"
+            },
+            {
+              "name": "Component",
+              "type": "text"
+            },
+            {
+              "name": "Verification Method",
+              "type": "select",
+              "options": [
+                "Integration Testing",
+                "Functional Testing",
+                "User Acceptance Testing",
+                "Unit Testing",
+                "Performance Testing",
+                "Security Testing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Outstanding Issues",
+      "order": 9,
+      "questions": [
+        {
+          "question_id": "open_issues",
+          "question": "What design or implementation issues are still open?",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Builds the Outstanding Issues table in section 4.6",
+          "fields": [
+            {
+              "name": "Issue",
+              "type": "text"
+            },
+            {
+              "name": "Owner",
+              "type": "text"
+            },
+            {
+              "name": "Status",
+              "type": "select",
+              "options": [
+                "Open",
+                "Under Review",
+                "Resolved",
+                "Closed",
+                "Deferred"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8015-8589-cf7e17d90727",
+    "extraction_date": "2026-02-09T15:47:47.134994",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 37,
+    "substantive_sections": 18,
+    "generic_sections_excluded": 19,
+    "reorder_timestamp": "2026-02-10T11:45:06.951242",
+    "validator_version": "3.0_intelligent"
+  }
+}

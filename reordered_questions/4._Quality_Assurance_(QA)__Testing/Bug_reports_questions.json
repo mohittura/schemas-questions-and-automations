@@ -1,0 +1,287 @@
+{
+  "document_name": "Bug Report Template",
+  "document_type": "Bug Report Template",
+  "estimated_completion_time": "10-15 minutes",
+  "total_questions": 22,
+  "question_categories": [
+    {
+      "category": "Environment Details",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "application_version",
+          "question": "What version of the application has this bug?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Version number where bug occurs",
+          "placeholder": "v2.3.1"
+        },
+        {
+          "question_id": "environment_type",
+          "question": "In which environment did you find this bug?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Environment where bug was discovered",
+          "options": [
+            "Development",
+            "QA",
+            "Staging",
+            "Production"
+          ]
+        },
+        {
+          "question_id": "platform",
+          "question": "On which platform does this bug occur?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Primary platform affected",
+          "options": [
+            "Web",
+            "iOS",
+            "Android",
+            "Desktop",
+            "API"
+          ]
+        },
+        {
+          "question_id": "browser_device",
+          "question": "Which browser or device showed this bug?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Specific browser version or device model",
+          "placeholder": "Chrome 120, iPhone 15, Samsung S24"
+        },
+        {
+          "question_id": "operating_system",
+          "question": "What operating system were you using?",
+          "answer_type": "text",
+          "required": true,
+          "description": "OS where bug was observed",
+          "placeholder": "Windows 11, macOS 14, iOS 17"
+        },
+        {
+          "question_id": "environment_notes",
+          "question": "Any additional environment details?",
+          "answer_type": "long_text",
+          "required": false,
+          "description": "Extra context that might affect reproduction",
+          "placeholder": "VPN enabled, dark mode, 4G network"
+        }
+      ]
+    },
+    {
+      "category": "Steps to Reproduce",
+      "order": 2,
+      "questions": [
+        {
+          "question_id": "reproduction_steps",
+          "question": "List the exact steps to reproduce this bug",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Numbered list of actions that consistently trigger the bug",
+          "placeholder": "1. Navigate to login page\n2. Enter valid username\n3. Enter valid password\n4. Click Login button"
+        }
+      ]
+    },
+    {
+      "category": "Expected vs Actual Results",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "expected_result",
+          "question": "What should happen according to the requirements?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Describe the correct behavior expected",
+          "placeholder": "User should be redirected to the dashboard and see a welcome message"
+        },
+        {
+          "question_id": "actual_result",
+          "question": "What actually happens when the bug occurs?",
+          "answer_type": "long_text",
+          "required": true,
+          "description": "Describe the incorrect behavior observed",
+          "placeholder": "User remains on login page and sees error 'Invalid credentials' despite entering correct details"
+        }
+      ]
+    },
+    {
+      "category": "Visual Evidence",
+      "order": 4,
+      "questions": [
+        {
+          "question_id": "visual_evidence",
+          "question": "Add links to screenshots, videos, or logs that show the bug",
+          "answer_type": "structured_list",
+          "required": false,
+          "description": "Upload evidence files and paste their links here",
+          "fields": [
+            {
+              "name": "Evidence Type",
+              "type": "select",
+              "options": [
+                "Screenshot",
+                "Video",
+                "Logs",
+                "Error Message"
+              ]
+            },
+            {
+              "name": "File Link",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Severity and Priority",
+      "order": 5,
+      "questions": [
+        {
+          "question_id": "severity",
+          "question": "How severe is this bug?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Impact on system usability (Critical = system down, Low = cosmetic)",
+          "options": [
+            "Critical",
+            "High",
+            "Medium",
+            "Low"
+          ]
+        },
+        {
+          "question_id": "priority",
+          "question": "What should be the fix priority?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Order in which this bug should be fixed",
+          "options": [
+            "High",
+            "Medium",
+            "Low"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Bug Information",
+      "order": 6,
+      "questions": [
+        {
+          "question_id": "bug_id",
+          "question": "What is the Bug ID?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Unique identifier for tracking this bug",
+          "placeholder": "BUG-1234"
+        },
+        {
+          "question_id": "feature_name",
+          "question": "Which feature or module is affected?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name of the feature where the bug occurs",
+          "placeholder": "User Login"
+        },
+        {
+          "question_id": "bug_title",
+          "question": "Provide a short, descriptive title for this bug",
+          "answer_type": "text",
+          "required": true,
+          "description": "Clear summary of the issue",
+          "placeholder": "Login button remains disabled after entering credentials"
+        },
+        {
+          "question_id": "reported_by",
+          "question": "Who reported this bug?",
+          "answer_type": "text",
+          "required": true,
+          "description": "Name of person who discovered the bug",
+          "placeholder": "John Smith"
+        },
+        {
+          "question_id": "reported_date",
+          "question": "When was this bug reported?",
+          "answer_type": "date",
+          "required": true,
+          "description": "Date when the bug was first identified"
+        },
+        {
+          "question_id": "bug_status",
+          "question": "What is the current status of this bug?",
+          "answer_type": "select",
+          "required": true,
+          "description": "Current state in the bug lifecycle",
+          "options": [
+            "Open",
+            "In Progress",
+            "Fixed",
+            "Closed",
+            "Reopened"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Additional Information",
+      "order": 7,
+      "questions": [
+        {
+          "question_id": "test_case_id",
+          "question": "Related Test Case ID (if any)",
+          "answer_type": "text",
+          "required": false,
+          "description": "ID of test case that uncovered this bug",
+          "placeholder": "TC-LOGIN-001"
+        },
+        {
+          "question_id": "related_requirement",
+          "question": "Related Requirement or User Story ID",
+          "answer_type": "text",
+          "required": false,
+          "description": "Link to requirement that is not working",
+          "placeholder": "US-123"
+        },
+        {
+          "question_id": "frequency",
+          "question": "How often does this bug occur?",
+          "answer_type": "select",
+          "required": false,
+          "description": "Rate of bug occurrence",
+          "options": [
+            "Always",
+            "Intermittent",
+            "Rare"
+          ]
+        },
+        {
+          "question_id": "workaround",
+          "question": "Is there a workaround available?",
+          "answer_type": "select",
+          "required": false,
+          "description": "Whether users can avoid this bug",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "page_id": "2fc89db1-5e5b-8021-91c2-d13b19a5e48c",
+    "extraction_date": "2026-02-09T16:04:57.175750",
+    "model_used": "moonshotai/kimi-k2-instruct-0905"
+  },
+  "_validation": {
+    "reordered": true,
+    "reordered_by": "substantive_sections_only",
+    "total_schema_sections": 8,
+    "substantive_sections": 7,
+    "generic_sections_excluded": 1,
+    "reorder_timestamp": "2026-02-10T11:45:07.680042",
+    "validator_version": "3.0_intelligent"
+  }
+}
