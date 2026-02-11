@@ -1,4 +1,8 @@
 import streamlit as st
+import requests 
+
+
+FASTAPI_URL= "https://127.0.0.1:8000"
 
 st.set_page_config(layout="wide")
 
